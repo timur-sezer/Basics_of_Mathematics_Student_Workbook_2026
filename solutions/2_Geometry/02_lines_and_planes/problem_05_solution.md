@@ -25,12 +25,14 @@ $$
    - **Intersecting:** $v_1 \nparallel v_2$ and there exists a unique pair $(t, s)$ such that $P_1 + t v_1 = P_2 + s v_2$ (one common point, coplanar).
    - **Skew:** $v_1 \nparallel v_2$ and no intersection point exists (zero common points, non-coplanar).
 
-2. **The Coplanarity Criterion via Scalar Triple Product:**
-   Two lines are coplanar (either parallel or intersecting) if and only if the vector connecting their base points $\overrightarrow{P_1 P_2}$ lies in the plane spanned by $v_1$ and $v_2$, which is algebraically equivalent to:
-   $$
-   [v_1, v_2, \overrightarrow{P_1 P_2}] = (v_1 \times v_2) \cdot \overrightarrow{P_1 P_2} = 0
-   $$
-   If this scalar triple product is non-zero, the volume of the parallelepiped spanned by the three vectors is strictly positive, proving definitively that the lines are **skew**.
+2. **The Coplanarity Criterion and Scalar Triple Product:**
+   - **For non-parallel lines ($v_1 \nparallel v_2$):** The two lines are coplanar (intersecting) if and only if the displacement vector connecting their base points $\overrightarrow{P_1 P_2}$ lies in the 2D plane $\operatorname{span}(v_1, v_2)$.
+   - **For parallel lines ($v_1 \parallel v_2$):** Distinct parallel lines are always coplanar (they uniquely determine a plane containing both lines), even though their connecting displacement $\overrightarrow{P_1 P_2}$ need not lie in the 1-dimensional $\operatorname{span}(v_1)$. In this case, $v_1 \times v_2 = \mathbf{0}$ automatically.
+   - **Unified Algebraic Criterion:** In all cases, two lines are coplanar if and only if their scalar triple product vanishes:
+     $$
+     [v_1, v_2, \overrightarrow{P_1 P_2}] = (v_1 \times v_2) \cdot \overrightarrow{P_1 P_2} = 0.
+     $$
+     If this scalar triple product is non-zero, the volume of the parallelepiped spanned by the three vectors is strictly positive, proving definitively that the directions are nonparallel and the lines are **skew**.
 
 ---
 

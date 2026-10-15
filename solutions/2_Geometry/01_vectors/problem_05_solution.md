@@ -21,11 +21,15 @@ $$
    u \cdot v = \|u\| \, \|v\| \cos \theta \implies \cos \theta = \frac{u \cdot v}{\|u\| \, \|v\|}
    $$
 
-2. **Qualitative Angle Classification by Dot Product Sign:**
-   Because vector norms are strictly positive ($\|u\| > 0, \|v\| > 0$), the sign of $\cos \theta$ is identical to the sign of $u \cdot v$:
-   - If $u \cdot v > 0 \implies \cos \theta > 0 \implies 0 \le \theta < \frac{\pi}{2}$ ($0^\circ \le \theta < 90^\circ$): **Acute angle**.
+2. **Angle Classification by Dot Product Sign:**
+   Because vector norms are strictly positive ($\|u\| > 0, \|v\| > 0$), the sign of $\cos \theta$ is identical to the sign of $u \cdot v$. For $\theta \in [0, \pi]$:
+   - If $u \cdot v > 0 \implies \cos \theta > 0$:
+     - $\theta = 0$ ($0^\circ$): **Zero angle (collinear, same direction)** when $u \cdot v = \|u\|\|v\|$.
+     - $0 < \theta < \frac{\pi}{2}$ ($0^\circ < \theta < 90^\circ$): **Acute angle**.
    - If $u \cdot v = 0 \implies \cos \theta = 0 \implies \theta = \frac{\pi}{2}$ ($90^\circ$): **Right angle (orthogonal)**.
-   - If $u \cdot v < 0 \implies \cos \theta < 0 \implies \frac{\pi}{2} < \theta \le \pi$ ($90^\circ < \theta \le 180^\circ$): **Obtuse angle**.
+   - If $u \cdot v < 0 \implies \cos \theta < 0$:
+     - $\frac{\pi}{2} < \theta < \pi$ ($90^\circ < \theta < 180^\circ$): **Obtuse angle**.
+     - $\theta = \pi$ ($180^\circ$): **Straight angle (collinear, opposite direction)** when $u \cdot v = -\|u\|\|v\|$.
 
 ---
 

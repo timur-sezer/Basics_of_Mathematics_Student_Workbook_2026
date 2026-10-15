@@ -165,11 +165,11 @@ $$
 ## 4. Verification and Consistency Checks
 
 1. **Cross Product Parallelism Check for $(a, b)$:**
-   Two vectors have angle $\theta = 0^\circ$ if and only if their cross product is the zero vector:
+   For non-zero vectors, a vanishing cross product $\|a \times b\| = 0$ indicates collinearity, meaning the angle is either $\theta = 0^\circ$ (same direction) or $\theta = 180^\circ$ (opposite direction):
    $$
-   a \times b = \det \begin{pmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 2 & 1 \\ 2 & 4 & 2 \end{pmatrix} = \begin{pmatrix} (2)(2) - (1)(4) \\ -((1)(2) - (1)(2)) \\ (1)(4) - (2)(2) \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix} \quad (\checkmark)
+   a \times b = \det \begin{pmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 2 & 1 \\ 2 & 4 & 2 \end{pmatrix} = \begin{pmatrix} (2)(2) - (1)(4) \\ -((1)(2) - (1)(2)) \\ (1)(4) - (2)(2) \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
    $$
-   The vanishing cross product confirms that $a$ and $b$ are parallel with identical orientation.
+   The zero cross product establishes parallelism. To distinguish identical orientation ($\theta = 0^\circ$) from opposite orientation ($\theta = 180^\circ$), we observe that $b = +2a$ with a strictly positive proportionality factor $k = +2 > 0$ (and correspondingly $a \cdot b = 12 > 0$). This confirms conclusively that $\theta_{ab} = 0^\circ$.
 
 2. **Geometric Equivalence of Angles with $c$:**
    Because $b = 2a$, the ray from the origin through $b$ is identical to the ray through $a$. Therefore, the geometric angle between ray $a$ and vector $c$ must be identical to the angle between ray $b$ and vector $c$:

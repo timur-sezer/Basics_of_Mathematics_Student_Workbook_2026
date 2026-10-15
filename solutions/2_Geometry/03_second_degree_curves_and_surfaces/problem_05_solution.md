@@ -114,6 +114,34 @@ As the distance from the center increases ($|x| \to \infty$), the constant term 
 
 ---
 
+### Step 4: Required Geometric Sketch of the Hyperbola
+
+Below is the sketch of the horizontal hyperbola $\frac{x^2}{16} - \frac{y^2}{9} = 1$ with its vertices and asymptotes:
+
+```
+                  y
+           \      ^      /  Asymptote y = 3x/4
+             \    |    /
+          .    \  |  /    .
+        /        \|/        \
+  -----+----------+----------+-----> x
+      /(-4, 0)  Center     (4, 0)\
+     / [Vertex]  (0,0)   [Vertex] \
+        \        /|\        /
+          '    /  |  \    '
+             /    |    \
+           /      |      \  Asymptote y = -3x/4
+                  |
+```
+
+*Geometric Features Labeled on the Sketch:*
+- **Center:** $(0, 0)$ at the intersection of the coordinate axes and asymptotes.
+- **Transverse Axis:** Along the $x$-axis; Vertices at $(-4, 0)$ and $(4, 0)$ with real semiaxis $a = 4$.
+- **Asymptote Lines:** $y = \frac{3}{4}x$ and $y = -\frac{3}{4}x$ passing through the origin.
+- **Branches:** Two disjoint branches opening horizontally to the left ($x \le -4$) and to the right ($x \ge 4$), asymptotically converging towards the lines $y = \pm \frac{3}{4}x$ as $|x| \to \infty$.
+
+---
+
 ## 4. Verification and Consistency Checks
 
 1. **Numerical Value Verification Far from Center:**

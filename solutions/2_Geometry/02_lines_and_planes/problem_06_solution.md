@@ -83,7 +83,7 @@ Because the normal vectors are not proportional ($n_1 \nparallel n_2$), **the pl
    \theta = \arccos(0) = \frac{\pi}{2} \text{ radians} = 90^\circ
    $$
 
-The planes $\Pi_1$ and $\Pi_2$ are **perpendicular (orthogonal)** to each other.
+The dihedral angle is exactly $90^\circ$, which is a **right angle**. Therefore, the planes $\Pi_1$ and $\Pi_2$ are strictly **perpendicular (orthogonal)** to each other.
 
 ---
 
@@ -91,14 +91,16 @@ The planes $\Pi_1$ and $\Pi_2$ are **perpendicular (orthogonal)** to each other.
 
 1. **Invariance Under Translation:**
    - The position of a plane in space is defined by its orientation (tilt) plus an offset distance from the origin.
-   - The dihedral angle between two planes measures only their relative spatial inclination; translating either plane along any direction alters its intersection line but leaves the angle between the planar surfaces unchanged.
-2. **Geometric Normal Rotation:**
-   - The normal vector $n_1$ is obtained by rotating the tangent plane $\Pi_1$ by $90^\circ$ around any in-plane axis.
-   - Rotating both planes by $90^\circ$ preserves the relative angle between them identically:
-     $$
-     \angle(\Pi_1, \Pi_2) = \angle(n_1, n_2)
-     $$
-   - Therefore, the constant terms ($D_1 = -1, D_2 = -2$) have zero influence on parallelism or angles, making the normal vectors $n_1$ and $n_2$ completely sufficient.
+   - The dihedral angle between two planes measures only their relative spatial inclination; translating either plane alters its intersection line but leaves the angle between the planar surfaces unchanged.
+   - Therefore, the constant scalar terms ($D_1 = -1, D_2 = -2$) have zero influence on parallelism or angles.
+
+2. **Cross-Section Perpendicular to the Intersection Line:**
+   - Consider a 2D plane $\Pi_{\perp}$ that is orthogonal to the intersection line $L = \Pi_1 \cap \Pi_2$.
+   - The intersection of $\Pi_{\perp}$ with each plane $\Pi_1$ and $\Pi_2$ forms a 1D trace line ($l_1$ and $l_2$).
+   - Since both normal vectors $n_1$ and $n_2$ are perpendicular to the intersection line, they lie entirely in this same 2D cross-section $\Pi_{\perp}$.
+   - Within this 2D cross-sectional plane, each normal vector $n_i$ is perpendicular to its respective plane's trace line $l_i$ ($n_1 \perp l_1$ and $n_2 \perp l_2$).
+   - In elementary plane geometry, if two lines $l_1$ and $l_2$ meet at angle $\theta$, their respective perpendicular lines $n_1$ and $n_2$ meet at the exact same angle $\theta$ (or $\pi - \theta$). The smaller angle between the planar traces identically equals the smaller angle between the normal lines.
+   - Hence, the normal vectors $n_1$ and $n_2$ alone fully determine the dihedral angle.
 
 ---
 

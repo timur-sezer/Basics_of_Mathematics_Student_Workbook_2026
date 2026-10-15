@@ -23,10 +23,13 @@ Analyze the following two second-degree equations:
 ## 2. Theoretical Background and Concepts
 
 1. **Second-Degree Curve Reduction in $\mathbb{R}^2$:**
-   An equation $A x^2 + C y^2 + D x + E y + F = 0$ with $A \cdot C > 0$ and $A \ne C$ represents an ellipse after completing the squares:
-   $$
-   \frac{(x - x_0)^2}{a^2} + \frac{(y - y_0)^2}{b^2} = 1
-   $$
+   An equation $A x^2 + C y^2 + D x + E y + F = 0$ with $A \cdot C > 0$ and $A \ne C$ indicates **elliptic type**. After normalizing so $A, C > 0$ and completing the squares, the equation becomes $A(x - x_0)^2 + C(y - y_0)^2 = M$.
+   - A **real non-degenerate ellipse** is obtained if and only if the normalized right-hand side is strictly positive ($M > 0$):
+     $$
+     \frac{(x - x_0)^2}{a^2} + \frac{(y - y_0)^2}{b^2} = 1, \qquad a = \sqrt{\frac{M}{A}}, \; b = \sqrt{\frac{M}{C}}.
+     $$
+   - If $M = 0$, it degenerates to a single point $(x_0, y_0)$.
+   - If $M < 0$, the solution set is the empty set $\emptyset$ (no real locus).
 
 2. **Homogeneous Quadratic Surfaces in $\mathbb{R}^3$:**
    An equation of the form $\frac{x^2}{a^2} + \frac{y^2}{b^2} = z^2$ is homogeneous of degree 2.
@@ -150,6 +153,52 @@ Combining the evidence:
 3. The surface consists of two symmetrical nappes meeting at the origin.
 
 Therefore, the surface is an **elliptic cone** (Polish: *stożek eliptyczny*), with apex at the origin $(0, 0, 0)$, vertical axis of symmetry $Oz$, and an aspect ratio of $2 : 1$ between the $y$- and $x$-axes.
+
+### Step 5: Required Qualitative Sketches of Both Objects
+
+#### 1. Translated Ellipse: $\frac{(x - 1)^2}{9} + \frac{(y + 2)^2}{4} = 1$
+```
+                       y
+                       ^
+                       |
+                       |  (1, 0) [Co-vertex B_2]
+                  .----+----.
+              .        |        .
+           .           |           .
+  --------+------------+------------+--------> x
+        -2|          (1,-2)         | 4
+  [Vertex A_1]     [Center]     [Vertex A_2]
+           .           |           .
+              .        |        .
+                  '----+----'
+                       |  (1, -4) [Co-vertex B_1]
+                       |
+```
+*Labels:* Center $S(1, -2)$; horizontal major axis ($2a = 6$) with vertices $A_1(-2, -2)$ and $A_2(4, -2)$; vertical minor axis ($2b = 4$) with co-vertices $B_1(1, -4)$ and $B_2(1, 0)$.
+
+#### 2. Elliptic Cone: $4x^2 + y^2 = z^2$ (Aspect Ratio $y : x = 2 : 1$)
+```
+                    z
+                    ^
+            \       |       /   Upper nappe (z > 0)
+             \    .---.    /    Horizontal slice: Ellipse
+              \  (  .  )  /     Major semiaxis along y: b(c) = |c|
+               \  '---'  /      Minor semiaxis along x: a(c) = |c|/2
+                \   |   /
+                 \  |  /        Steeper trace in xz-plane (z = +-2x)
+                  \ | /         Gentler trace in yz-plane (z = +-y)
+  ------------------+------------------> y
+                  / | \         Apex at Origin (0, 0, 0)
+                 /  |  \
+                /   |   \
+               /  .---.  \
+              /  (     )  \
+             /    '---'    \    Lower nappe (z < 0)
+            /       |       \
+                   /
+                  v x
+```
+*Labels:* Vertical axis of symmetry $z$; apex at $(0, 0, 0)$ connecting both nappes; elliptical cross-sections $z = c \ne 0$ with narrower $x$-dimension ($|c|/2$) and wider $y$-dimension ($|c|$); vertical traces $z = \pm 2x$ in $xz$-plane and $z = \pm y$ in $yz$-plane.
 
 ---
 

@@ -115,6 +115,79 @@ For each curve:
 
 ---
 
+### Step 5: Required Geometric Sketches of the Four Curves
+
+#### 1. Circle: $x^2 + y^2 = 9$ ($R = 3$)
+```
+                 y
+                 ^
+                 | (0, 3)
+             .---+---.
+           /     |     \
+          |      |      |
+  --------+------+------+--------> x
+   (-3, 0)|    (0,0)    | (3, 0)
+          |      |      |
+           \     |     /
+             '---+---'
+                 | (0, -3)
+                 |
+```
+*Labels:* Center $(0, 0)$, Radius $R = 3$, Intercepts at $(\pm 3, 0)$ and $(0, \pm 3)$.
+
+#### 2. Ellipse: $\frac{x^2}{16} + \frac{y^2}{9} = 1$ ($a = 4, b = 3$)
+```
+                   y
+                   ^
+                   | (0, 3) [Co-vertex]
+              .----+----.
+           .       |       .
+         /         |         \
+  ------+----------+----------+------> x
+ (-4, 0)|        (0,0)        | (4, 0) [Vertex]
+         \         |         /
+           .       |       .
+              '----+----'
+                   | (0, -3) [Co-vertex]
+                   |
+```
+*Labels:* Center $(0, 0)$, Major semiaxis $a = 4$ along $x$-axis, Minor semiaxis $b = 3$ along $y$-axis, Vertices $(\pm 4, 0)$, Co-vertices $(0, \pm 3)$.
+
+#### 3. Parabola: $y^2 = 8x$ (Opens Right, $p = 4$)
+```
+              y
+              ^
+              |           . (2, 4)
+              |         .
+              |       .
+              |     .
+  ------------+----+--------> x
+        Directrix  |V(0,0)  F(2,0)
+          x = -2   |     .
+              |       .
+              |         . (2, -4)
+              |           .
+```
+*Labels:* Vertex $V(0, 0)$, Axis of symmetry $y = 0$, Opens right ($x \ge 0$), Focus $F(2, 0)$, Directrix line $x = -2$, Characteristic points $(2, \pm 4)$.
+
+#### 4. Hyperbola: $\frac{x^2}{9} - \frac{y^2}{4} = 1$ ($a = 3, b = 2$, Asymptotes $y = \pm \frac{2}{3}x$)
+```
+              y
+       \      ^      /  Asymptote y = 2x/3
+         \    |    /
+       .   \  |  /   .
+     /       \|/       \
+  --+---------+---------+--> x
+   /(-3,0)  (0,0)   (3,0)\
+     \       /|\       /
+       '   /  |  \   '
+         /    |    \
+       /      |      \  Asymptote y = -2x/3
+```
+*Labels:* Center $(0, 0)$, Vertices $(\pm 3, 0)$, Semiaxes $a = 3, b = 2$, Asymptotes $y = \pm \frac{2}{3}x$, Branches opening horizontally left and right.
+
+---
+
 ## 4. Verification and Consistency Checks
 
 1. **Comparative Overview Table:**

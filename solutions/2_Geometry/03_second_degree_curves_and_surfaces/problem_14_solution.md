@@ -124,6 +124,53 @@ Surface 2 is a **right circular cylinder** (Polish: *walec kołowy*) of radius $
    - The cylinder is formed by an infinite bundle of parallel vertical lines, guaranteeing that every cross-section perpendicular to these generators has the identical base circle radius of $2$.
    - In contrast, the ruling lines of the cone are not parallel; they all pass through the common origin $(0, 0, 0)$ at an inclination of $45^\circ$, causing the horizontal circular cross-section to flare out proportionally to $|z|$.
 
+### Step 4: Required Qualitative Sketches of Both Quadric Surfaces
+
+#### 1. Right Circular Double Cone: $x^2 + y^2 = z^2$
+```
+                    z
+                    ^
+            \       |       /   Upper nappe (z > 0)
+             \     .-.     /    Trace at z = c: Circle R = |c|
+              \   (   )   /
+               \   '-'   /
+                \   |   /       Vertical trace (y = 0): Lines z = +-x
+                 \  |  /
+                  \ | /
+  ------------------+------------------> y
+                  / | \         Apex / Origin (0, 0, 0)
+                 /  |  \
+                /   |   \
+               /   .-.   \
+              /   (   )   \
+             /     '-'     \    Trace at z = -c: Circle R = |-c|
+            /       |       \   Lower nappe (z < 0)
+                   /
+                  v x
+```
+*Labels:* Vertical axis of revolution $z$; apex at $(0, 0, 0)$ connecting both upper and lower nappes; representative horizontal circular cross-sections of radius $R(c) = |c|$; vertical linear traces $z = \pm x$ ($y=0$) and $z = \pm y$ ($x=0$) inclined at $45^\circ$.
+
+#### 2. Right Circular Cylinder: $x^2 + y^2 = 4$
+```
+                    z
+                    ^
+                   .-.          Top rim at z = c (Circle R = 2)
+                 (     )
+                  '-+-'
+                  | | |
+                  | | |         Vertical trace (x = 0): Parallel lines y = +-2
+                  | | |
+  ----------------+-+------------------> y
+                  | | |         Equator at z = 0 (Circle R = 2)
+                  | | |
+                  | | |
+                 (  |  )
+                  '-+-'         Bottom rim at z = -c (Circle R = 2)
+                   /
+                  v x
+```
+*Labels:* Vertical longitudinal axis $z$; constant base radius $R = 2$ at all horizontal slices $z = c$; vertical straight line generators parallel to the $z$-axis; vertical planar traces forming parallel lines $x = \pm 2$ ($y=0$) and $y = \pm 2$ ($x=0$).
+
 ---
 
 ## 4. Verification and Consistency Checks

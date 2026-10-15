@@ -107,9 +107,12 @@ $$
    - **Method 1 (Inverse):** Required evaluating $\det A$ ($3$ operations), forming the $2 \times 2$ inverse matrix, and computing the matrix-vector product $A^{-1}b$ ($4$ multiplications, $2$ additions, plus scalar division).
    - **Method 2 (Elimination):** Required only $1$ row swap, $1$ row operation (eliminating position $(2,1)$), and immediate back-substitution of $2$ scalar linear equations.
 
-3. **Conclusion on Simplicity:**
-   - **In this example, Gaussian elimination is simpler and faster.** It computes the target vector directly without the auxiliary overhead of calculating and storing the entire inverse matrix $A^{-1}$.
-   - **General Rule:** For solving a single specific linear system $Ax = b$, Gaussian elimination is always preferred. Finding the explicit inverse $A^{-1}$ is advantageous primarily when $A$ is fixed and solutions must be found for multiple different vectors $b$.
+3. **Conclusion on Simplicity and Algorithmic Choice:**
+   - **In this concrete example, Gaussian elimination is simpler and faster.** It computes the target vector directly without the auxiliary overhead of calculating and storing all entries of the inverse matrix $A^{-1}$.
+   - **General Method Choice Guidelines:**
+     - For solving a general single system $Ax = b$ from scratch when no inverse or structural shortcut is available, Gaussian elimination (or $LU$ decomposition) is usually the standard and most economical choice ($\mathcal{O}(\frac{2}{3}n^3)$ versus $\mathcal{O}(2n^3)$ for explicitly inverting and multiplying).
+     - However, a pre-computed inverse, an orthogonal matrix ($A^{-1} = A^T$), or a diagonal/triangular structure can make direct inversion or matrix-vector multiplication competitive or preferable.
+     - For repeated solves with multiple right-hand sides $b$, while an explicit inverse can be multiplied in $\mathcal{O}(n^2)$, storing and applying triangular $LU$ elimination factors also achieves the same $\mathcal{O}(n^2)$ forward/back-substitution per right-hand side while maintaining superior numerical stability. The efficiency conclusion here is therefore specifically grounded in the assumptions of a single, unstructured dense solve.
 
 ---
 

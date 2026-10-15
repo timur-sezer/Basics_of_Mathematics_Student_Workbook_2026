@@ -26,7 +26,7 @@ $$
      The surface consists of two separate, disconnected sheets separated by a gap along the $z$-axis (where $|z| < c$).
 
 2. **Rotational Symmetry:**
-   Because the terms $x^2 + y^2 = r^2$ appear together, both surfaces possess complete rotational symmetry about the $z$-axis. Slicing with any horizontal plane $z = c$ always produces a circle centered on the $z$-axis.
+   Because the terms $x^2 + y^2 = r^2$ appear together, both surfaces possess complete rotational symmetry about the $z$-axis. When a horizontal plane $z = c$ intersects the surface, the non-empty cross-sections exhibit circular symmetry: for the one-sheeted hyperboloid, every slice is a non-empty circle; for the two-sheeted hyperboloid, slices are circles for $|c| > 1$, degenerate to single points at $c = \pm 1$, and are completely empty for $|c| < 1$.
 
 ---
 
@@ -61,7 +61,7 @@ $$
   $x^2 + y^2 = 1 + 4 = 5 \implies R_1(\pm 2) = \sqrt{5} \approx 2.236$.
 
 **Qualitative Shape:**
-Surface 1 is a single continuous, open tube with an hourglass (cooling-tower) shape that narrows to a minimum radius of $1$ at $z = 0$ and flares out quadratically as $|z| \to \infty$. It is connected in one single continuous piece, known as a **hyperboloid of one sheet** (Polish: *hiperboloida jednopowłokowa*).
+Surface 1 is a single continuous, open tube with an hourglass (cooling-tower) shape that narrows to a minimum waist radius of $1$ at $z = 0$ and exhibits asymptotically linear radial growth ($R_1(c) = \sqrt{1 + c^2} \sim |c|$) as $|z| \to \infty$. It is connected in one single continuous piece, known as a **hyperboloid of one sheet** (Polish: *hiperboloida jednopowłokowa*).
 
 ---
 
@@ -113,6 +113,46 @@ Surface 2 is disconnected into two separate, opposing bowl-shaped shells: an upp
 | **Cross-Section Radius $R(c)$** | $R_1(c) = \sqrt{1 + c^2} \ge 1$ | $R_2(c) = \sqrt{c^2 - 1} \ge 0$ |
 | **Vertical Slices ($x=0$ or $y=0$)** | Hyperbolas crossing the equator | Hyperbolas crossing the $z$-axis at $\pm 1$ |
 | **Asymptotic Boundary** | Common asymptotic cone $x^2 + y^2 = z^2$ | Common asymptotic cone $x^2 + y^2 = z^2$ |
+
+### Step 4: Required Qualitative Sketches of Both Surfaces
+
+#### 1. Hyperboloid of One Sheet: $x^2 + y^2 - z^2 = 1$
+```
+                     z
+                     ^
+             \       |       /   Top opening (z > 0)
+              \     .-.     /
+               \   (   )   /
+                )   '-'   (
+        --------+----+----+--------> y
+       (-1,0,0) (  (0,0,0) ) (1,0,0)  Waist circle (z = 0, Radius = 1)
+                )   .-.   (
+               /   (   )   \
+              /     '-'     \
+             /       |       \   Bottom opening (z < 0)
+                    /
+                   v x
+```
+*Labels:* Vertical axis of revolution $z$; narrowest waist throat at $z = 0$ with radius $R_1(0) = 1$; vertical hyperbolic profiles $x^2 - z^2 = 1$; asymptotically linear cone envelope $x^2 + y^2 = z^2$.
+
+#### 2. Hyperboloid of Two Sheets: $x^2 + y^2 - z^2 = -1$
+```
+                     z
+                     ^
+             \       |       /   Upper sheet (z >= 1)
+              \     .-.     /
+               '---( * )---'     Upper vertex (0, 0, 1)
+                     |
+        -------------+-------------> y
+             [GAP OF HEIGHT 2]   No real points for |z| < 1
+                     |
+               .---( * )---.     Lower vertex (0, 0, -1)
+              /     '-'     \
+             /       |       \   Lower sheet (z <= -1)
+                    /
+                   v x
+```
+*Labels:* Two disconnected sheets; upper vertex at $(0, 0, 1)$; lower vertex at $(0, 0, -1)$; forbidden spatial gap $|z| < 1$ containing no real points; asymptotic cone $x^2 + y^2 = z^2$.
 
 ---
 

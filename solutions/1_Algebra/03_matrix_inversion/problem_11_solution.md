@@ -80,8 +80,8 @@ $$
      A(1) = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
      $$
    - The rows are identical: $R_1 = R_2$. The columns are also identical.
-   - The linear mapping projects the entire 2D plane onto the line $y = x$.
-   - In the inverse formula, the denominator $1 - t^2 = 1 - 1 = 0$, leading to division by zero: $\frac{1}{0}$. No inverse can exist because dimension is lost.
+   - The linear mapping maps (collapses) the entire 2D plane onto the line $y = x$. Note that $A(1)$ satisfies $A(1)^2 = 2A(1)$, meaning it is twice the standard orthogonal projection matrix $P_{y=x} = \frac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}$.
+   - In the inverse formula, the denominator $1 - t^2 = 1 - 1 = 0$, leading to division by zero: $\frac{1}{0}$. No inverse can exist because dimension is lost (the kernel is nontrivial: $\ker(A(1)) = \operatorname{span}\{(1, -1)^T\}$).
 
 2. **At $t = -1$:**
    - The matrix becomes:
@@ -89,8 +89,8 @@ $$
      A(-1) = \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix}
      $$
    - The rows are linearly dependent: $R_2 = -R_1$.
-   - The linear mapping projects the entire 2D plane onto the line $y = -x$.
-   - In the inverse formula, the denominator $1 - (-1)^2 = 1 - 1 = 0$, again causing division by zero.
+   - The linear mapping maps (collapses) the entire 2D plane onto the line $y = -x$. Similarly, $A(-1)^2 = 2A(-1)$, so it equals twice the orthogonal projection matrix $P_{y=-x} = \frac{1}{2}\begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix}$.
+   - In the inverse formula, the denominator $1 - (-1)^2 = 1 - 1 = 0$, again causing division by zero, and $\ker(A(-1)) = \operatorname{span}\{(1, 1)^T\}$.
 
 3. **Behavior Near the Excluded Values:**
    As $t \to 1$ or $t \to -1$, the determinant approaches zero, meaning the inverse matrix entries diverge:

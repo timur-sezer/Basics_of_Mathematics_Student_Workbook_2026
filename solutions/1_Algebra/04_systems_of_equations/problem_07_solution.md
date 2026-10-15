@@ -101,13 +101,13 @@ $$
 #### Selection and Justification:
 - **Optimal Method:** **Gaussian elimination with back-substitution** applied directly to the augmented matrix $[A \mid b]$.
 - **Justification:**
-  - We only need **one** solution vector $x$ for **one** specific right-hand side $b$.
-  - Inverting a matrix requires transforming $[A \mid I_3] \to [I_3 \mid A^{-1}]$, which is equivalent to solving $3$ systems of equations simultaneously (one for each standard basis vector $e_1, e_2, e_3$), requiring $\approx 2n^3 = 54$ operations.
-  - In contrast, forward elimination on $[A \mid b]$ followed by back-substitution requires only $\approx \frac{2}{3}n^3 + n^2 \approx 18 + 9 = 27$ operations.
+  - We only need a single solution vector $x$ for one specific right-hand side $b$.
+  - Solving the single system via Gaussian elimination with back-substitution on the augmented matrix $[A \mid b]$ directly produces the solution vector without the computational overhead of constructing the full inverse matrix.
+  - Inverting a matrix requires transforming $[A \mid I_3] \to [I_3 \mid A^{-1}]$, which is structurally equivalent to solving 3 separate systems simultaneously (one for each canonical basis vector $e_1, e_2, e_3$).
 
 #### Reusable vs. Unnecessary Computation:
-- **Unnecessary Computation:** Computing $A^{-1}$ yields all $9$ elements of the inverse matrix. Because there are no subsequent right-hand side vectors to solve for, $8$ degrees of freedom in $A^{-1}$ beyond the specific linear combination needed for $b$ are discarded. Finding $A^{-1}$ is thus roughly $2$ to $3$ times more expensive than direct elimination.
-- **Reusable Component:** In a single-solve scenario, there is no subsequent step to reuse data. However, if multiple future vectors $b$ were anticipated, finding the $LU$ factorization ($A = LU$) would be the preferred alternative, requiring only forward and backward substitutions ($\mathcal{O}(n^2)$) for any new $b$ without computing $A^{-1}$ explicitly.
+- **Unnecessary Computation:** Computing $A^{-1}$ constructs all $9$ entries of the full inverse matrix. Because only a single solution vector is required, explicitly calculating all nine entries is unnecessary when only the specific linear combination $A^{-1}b$ is sought. Gaussian elimination computes this target vector directly.
+- **Reusable Component:** In a single-solve scenario, there is no subsequent step to reuse data. However, if multiple future vectors $b$ were anticipated, computing the $LU$ factorization ($A = LU$) would be the standard alternative, enabling reuse via forward and backward substitutions without constructing $A^{-1}$ explicitly.
 
 ---
 
@@ -120,8 +120,8 @@ $$
 
 2. **Structural Decision Summary Matrix:**
 
-| Scenario | Structure / Given Data | Recommended Method | Workload / Flops | Key Rationale |
+| Scenario | Structure / Given Data | Recommended Method | Relative Complexity | Key Rationale |
 | :--- | :--- | :--- | :--- | :--- |
 | **Case 1** | Upper triangular coefficient matrix | Back-substitution | $\mathcal{O}(n^2)$ | Elimination is already completed by problem structure. |
 | **Case 2** | Multiple RHS ($k=3$), $A^{-1}$ precomputed | Matrix multiplication $x_i = A^{-1}b_i$ | $3 \times \mathcal{O}(n^2)$ | Exploits the precomputed inverse; avoids redundant row reductions. |
-| **Case 3** | Single RHS ($k=1$), $A^{-1}$ unknown | Gaussian elimination on $[A \mid b]$ | $\approx \frac{2}{3}n^3$ | Avoids computing the full inverse, saving $\approx 60\%$ of arithmetic operations. |
+| **Case 3** | Single RHS ($k=1$), $A^{-1}$ unknown | Gaussian elimination on $[A \mid b]$ | Direct elimination | Avoids computing all entries of the full inverse matrix. |

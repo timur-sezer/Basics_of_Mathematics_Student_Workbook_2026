@@ -33,11 +33,12 @@ $$
    $$
    This mathematically guarantees that the normalized vector $e$ always has unit length.
 
-3. **Separation of Magnitude and Direction:**
-   Any vector can be uniquely decomposed into two independent factors:
+3. **Separation of Magnitude and Direction (Non-Zero Vectors):**
+   Every **non-zero vector** $v \ne \mathbf{0}$ has a unique canonical decomposition into magnitude and direction:
    $$
-   v = \underbrace{\|v\|}_{\text{Magnitude (Scalar } \ge 0)} \times \underbrace{e}_{\text{Direction \& Orientation (Unit Vector)}}
+   v = \underbrace{\|v\|}_{\text{Magnitude (Scalar } > 0)} \times \underbrace{e}_{\text{Direction \& Orientation (Unit Vector, } \|e\|=1)}
    $$
+   *Important Qualification for the Zero Vector:* The zero vector $\mathbf{0}$ has length $\|\mathbf{0}\| = 0$, has no defined geometric direction, and cannot be normalized (division by zero). While $\mathbf{0} = 0 \cdot e$ holds formally for *any* unit vector $e$, the unit factor $e$ is not uniquely determined. Thus, unique decomposition into a direction unit vector applies strictly to non-zero vectors.
 
 ---
 

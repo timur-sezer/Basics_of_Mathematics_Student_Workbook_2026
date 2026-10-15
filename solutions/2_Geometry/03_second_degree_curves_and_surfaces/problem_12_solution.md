@@ -121,27 +121,32 @@ where $\alpha \in [0, \pi)$ is the angle the plane makes with the $xz$-plane.
    This is a standard parabola opening upwards with vertex at $(0, 0, 0)$.
 
 3. **General Meridian Plane at Angle $\alpha$:**
-   In the plane $\Pi_\alpha$, let $\rho$ denote the radial coordinate distance from the $z$-axis, so $x = \rho \cos \alpha$ and $y = \rho \sin \alpha$.
-   Substitute into the surface equation:
+   In any vertical plane $\Pi_\alpha$ containing the $z$-axis, we introduce a signed 1D coordinate $s \in (-\infty, \infty)$ along the intersection line of $\Pi_\alpha$ with the $xy$-plane, such that points in $\Pi_\alpha$ are parameterized by:
    $$
-   z = (\rho \cos \alpha)^2 + (\rho \sin \alpha)^2 = \rho^2 (\cos^2 \alpha + \sin^2 \alpha) = \rho^2 \cdot 1
+   (x, y, z) = (s \cos \alpha, s \sin \alpha, z), \qquad s \in \mathbb{R}.
    $$
+   Substituting into the surface equation:
    $$
-   z = \rho^2
+   z = (s \cos \alpha)^2 + (s \sin \alpha)^2 = s^2 (\cos^2 \alpha + \sin^2 \alpha) = s^2 \cdot 1 = s^2.
    $$
-   In the 2D coordinate system $(\rho, z)$ of every meridian plane through the $z$-axis, the intersection curve is the exact same standard parabola $z = \rho^2$. Property 3 is satisfied.
+   In the 2D coordinate system $(s, z)$ of the meridian plane, as $s$ varies over all real numbers ($s \in \mathbb{R}$), the curve is the complete two-sided standard parabola:
+   $$
+   z = s^2, \qquad s \in \mathbb{R}.
+   $$
+   *(Using a signed coordinate $s$ rather than a strictly non-negative radial distance $\rho \ge 0$ ensures that both branches of the full parabola across the origin are represented).* Property 3 is satisfied.
 
 ---
 
 ## 4. Verification and Consistency Checks
 
-1. **Uniqueness Check (Elimination of Other Candidate Surfaces):**
-   - **Circular Cone ($z = \sqrt{x^2 + y^2} \iff z^2 = x^2 + y^2$):**
-     Has point cross-section at $z = 0$ and circular cross-sections for $z > 0$, but its vertical slices are straight lines ($z = \pm x$), not parabolas. (Violates Property 3).
-   - **Hemisphere ($z = \sqrt{R^2 - x^2 - y^2}$):**
+1. **Family of Solutions and Alternative Surface Comparison:**
+   - **General Family:** Any surface of the form $z = a(x^2 + y^2)$ with parameter $a > 0$ satisfies all three required conditions ($z=0$ is $(0,0,0)$, slices $z=c>0$ are circles of radius $\sqrt{c/a}$, and vertical slices through $Oz$ are parabolas $z = a s^2$). The equation $z = x^2 + y^2$ is the canonical member corresponding to $a = 1$.
+   - **Circular Cone ($z = \sqrt{x^2 + y^2}$, equivalent to $z^2 = x^2 + y^2$ for $z \ge 0$):**
+     Has point cross-section at $z = 0$ and circular cross-sections for $z > 0$, but its vertical slices are straight lines ($z = |s|$), not parabolas. (Violates Property 3).
+   - **Hemisphere ($z = \sqrt{R^2 - x^2 - y^2}$ for $z \ge 0$):**
      Has circular slices, but its vertical slices are semicircles, not parabolas. (Violates Property 3).
-   - **Circular Paraboloid ($z = x^2 + y^2$):**
-     Uniquely satisfies all three geometric conditions.
+   - **Circular Paraboloids ($z = a(x^2 + y^2), a > 0$):**
+     Represent the exact geometric quadric family satisfying all three conditions.
 
 2. **Quantitative Value Check:**
    - At $z = 1$: Circle of radius $R(1) = \sqrt{1} = 1$.

@@ -82,6 +82,37 @@ Comparing $\frac{x^2}{25} + \frac{y^2}{9} = 1$ with $\frac{x^2}{a^2} + \frac{y^2
 
 ---
 
+### Step 4: Required Geometric Sketch of the Ellipse
+
+Below is the geometric sketch of the horizontal ellipse $\frac{x^2}{25} + \frac{y^2}{9} = 1$:
+
+```
+                       y
+                       ^
+                       | (0, 3) [Co-vertex B_2]
+                  .----+----.
+              .        |        .
+           .           |           .
+         /             |             \
+  ------+--------------+--------------+------> x
+ (-5, 0)|            (0,0)            | (5, 0)
+[Vertex A_1]           |           [Vertex A_2]
+         \             |             /
+           .           |           .
+              .        |        .
+                  '----+----'
+                       | (0, -3) [Co-vertex B_1]
+                       |
+```
+
+*Geometric Features Labeled on the Sketch:*
+- **Center:** $(0, 0)$
+- **Major Semiaxis:** $a = 5$ along the $x$-axis; Vertices at $A_1(-5, 0)$ and $A_2(5, 0)$.
+- **Minor Semiaxis:** $b = 3$ along the $y$-axis; Co-vertices at $B_1(0, -3)$ and $B_2(0, 3)$.
+- **Consistent Scaling:** The horizontal dimension ($2a = 10$) visibly exceeds the vertical dimension ($2b = 6$), clearly depicting the horizontal elongation.
+
+---
+
 ## 4. Verification and Consistency Checks
 
 1. **Focal Distance and Foci Coordinates:**

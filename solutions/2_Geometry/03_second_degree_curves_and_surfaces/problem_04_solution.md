@@ -87,6 +87,39 @@ Using the focal parameter $p = 6$:
 
 ---
 
+### Step 4: Required Geometric Sketch of the Parabola
+
+Below is the sketch of the right-opening parabola $y^2 = 12x$ plotted using the vertex and calculated characteristic points:
+
+```
+              y
+              ^
+            6 |                       * P_1(3, 6)
+              |                     .
+            4 |                   .
+              |                 .
+            2 |               .
+              |             .
+  ------------+-----------+-----------+----------> x
+       Directrix|       V(0, 0)     F(3, 0)
+         x = -3 | [Axis of Symmetry: y = 0]
+           -2 |             .
+              |               .
+           -4 |                 .
+              |                   .
+           -6 |                       * P_2(3, -6)
+              |
+```
+
+*Geometric Features Labeled on the Sketch:*
+- **Vertex:** $V(0, 0)$ at the origin.
+- **Axis of Symmetry:** The line $y = 0$ ($x$-axis).
+- **Plotted Points:** $P_1(3, 6)$ and $P_2(3, -6)$ forming the vertical latus rectum chord through the focus $F(3, 0)$.
+- **Directrix:** The vertical line $x = -3$, equidistant from the vertex as the focus.
+- **Opening:** The curve strictly opens towards the right ($x \ge 0$) and is symmetric with respect to $y = 0$.
+
+---
+
 ## 4. Verification and Consistency Checks
 
 1. **Equidistance Definition Check (Focus vs. Directrix):**

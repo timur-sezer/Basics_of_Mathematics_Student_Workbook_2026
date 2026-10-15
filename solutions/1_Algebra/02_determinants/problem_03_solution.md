@@ -93,12 +93,12 @@ $$
 B = \begin{pmatrix} 0 & 3 & 1 \\ 1 & 2 & 0 \\ 2 & 1 & 1 \end{pmatrix}
 $$
 
-Expanding along Row 1:
+Expanding along Row 1 using cofactor expansion:
 $$
-\det B = 0 - 3 \cdot (-1)^{1+2} \det\begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix} \cdot (-1) \implies \det B = -3 \det\begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix} + 1 \det\begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}
+\det B = 0 \cdot C_{11} + 3 \cdot (-1)^{1+2} \det\begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix} + 1 \cdot (-1)^{1+3} \det\begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix} = -3(1) + 1(-3) = -6
 $$
 
-Compute the $2 \times 2$ minors:
+Detailed calculation of the $2 \times 2$ minors:
 - Minor for $b_{12}$:
   $$
   \det\begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix} = (1)(1) - (0)(2) = 1
@@ -108,9 +108,9 @@ Compute the $2 \times 2$ minors:
   \det\begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix} = (1)(1) - (2)(2) = 1 - 4 = -3
   $$
 
-Substitute the minors:
+Substituting the minors into the cofactor expansion:
 $$
-\det B = -3(1) + 1(-3) = -3 - 3 = -6
+\det B = 0 - 3(1) + 1(-3) = -3 - 3 = -6
 $$
 
 The direct calculation yields **$-6$**, confirming the prediction precisely.

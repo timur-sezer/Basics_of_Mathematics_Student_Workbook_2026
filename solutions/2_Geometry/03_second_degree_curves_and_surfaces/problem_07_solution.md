@@ -21,9 +21,13 @@ For the fourth equation, explain thoroughly why there are no real points satisfy
    A x^2 + C y^2 + D x + E y + F = 0
    $$
    The geometric nature of the real solution locus depends on the signs and values of the quadratic coefficients $A$ and $C$:
-   - **Ellipse / Circle ($A \cdot C > 0$):** Both coefficients have the same sign. If reduced to $A(x - x_0)^2 + C(y - y_0)^2 = M$ with $M > 0$, it is an ellipse (or a circle if $A = C$). If $M = 0$, it is a single point (degenerate ellipse). If $M < 0$, it is the empty set (imaginary ellipse).
-   - **Hyperbola ($A \cdot C < 0$):** Coefficients have opposite signs. If reduced to a non-zero RHS, it is a hyperbola. If RHS is zero, it represents two intersecting lines.
-   - **Parabola ($A \cdot C = 0$):** Exactly one of $A$ or $C$ is zero, and the corresponding variable appears to the first power.
+   - **Elliptic Type ($A \cdot C > 0$):** Both quadratic coefficients have the same non-zero sign. By multiplying through by $-1$ if necessary, we can always normalize so that $A > 0$ and $C > 0$. After completing squares, the equation takes the canonical form $A(x - x_0)^2 + C(y - y_0)^2 = M$. With $A, C > 0$:
+     - If $M > 0$: **Real ellipse** (or circle if $A = C$).
+     - If $M = 0$: **Single real point** $(x_0, y_0)$ (degenerate point-ellipse).
+     - If $M < 0$: **Empty set $\emptyset$** (imaginary ellipse; no real points, since the sum of non-negative squares cannot equal a negative number).
+     *(Note: If $A, C < 0$ without normalizing, the sign conditions on $M$ are reversed).*
+   - **Hyperbolic Type ($A \cdot C < 0$):** Coefficients have opposite signs. If reduced to a non-zero RHS, it represents a hyperbola. If the RHS is zero, it represents two intersecting degenerate lines.
+   - **Parabolic Type ($A \cdot C = 0$):** Exactly one of $A$ or $C$ is zero, and the corresponding variable appears to the first power.
 
 2. **Non-Negativity of Real Squares:**
    For any real number $u \in \mathbb{R}$, $u^2 \ge 0$. The sum of squares of real numbers is strictly non-negative:
@@ -115,12 +119,14 @@ For the fourth equation, explain thoroughly why there are no real points satisfy
 
 1. **Classification Summary Table:**
 
-| Equation | Canonical Form | Quadratic Discriminant $AC$ | Real Geometric Object |
+| Equation | Canonical Form | Coefficient Product $A \cdot C$ | Real Geometric Object |
 | :--- | :--- | :--- | :--- |
 | $4x^2 + 9y^2 = 36$ | $\frac{x^2}{9} + \frac{y^2}{4} = 1$ | $4 \times 9 = 36 > 0$ | **Ellipse** ($a=3, b=2$) |
 | $x^2 - y^2 = 1$ | $\frac{x^2}{1} - \frac{y^2}{1} = 1$ | $1 \times (-1) = -1 < 0$ | **Equilateral Hyperbola** ($a=b=1$) |
 | $x^2 - 4y = 0$ | $x^2 = 4y$ | $1 \times 0 = 0$ | **Parabola** ($p=2$, opens $+y$) |
-| $x^2 + y^2 + 1 = 0$ | $x^2 + y^2 = -1$ | $1 \times 1 = 1 > 0$, $R^2 < 0$ | **Empty Set $\emptyset$** (no real locus) |
+| $x^2 + y^2 + 1 = 0$ | $x^2 + y^2 = -1$ | $1 \times 1 = 1 > 0$ ($R^2 < 0$) | **Empty Set $\emptyset$** (no real locus) |
+
+*(Note: The full planar conic discriminant is $\Delta = B^2 - 4AC$; when cross-terms are absent ($B = 0$), $\Delta = -4AC$, so the sign of $A \cdot C$ directly determines the discriminant).*
 
 2. **Parabola Points Check:**
    For $x^2 = 4y$:
