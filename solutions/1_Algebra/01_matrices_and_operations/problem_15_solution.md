@@ -156,3 +156,4 @@ In this example, associativity means:
      A(B(Cv)) = \begin{pmatrix} 1 & 2 & 0 \\ 0 & 1 & 1 \end{pmatrix} \begin{pmatrix} 3 \\ 5 \\ -6 \end{pmatrix} = \begin{pmatrix} 3 + 10 + 0 \\ 0 + 5 - 6 \end{pmatrix} = \begin{pmatrix} 13 \\ -1 \end{pmatrix} \quad \checkmark
      $$
    The action on an arbitrary vector confirms the validity of the computed matrix product.
+

@@ -155,3 +155,4 @@ $$
    ((AB)^T)_{ij} = (AB)_{ji} = \sum_{r=1}^3 a_{jr} b_{ri} = \sum_{r=1}^3 b_{ri} a_{jr} = \sum_{r=1}^3 (B^T)_{ir} (A^T)_{rj} = (B^T A^T)_{ij}
    $$
    This proves the theoretical identity for every single entry, matching our numerical computation perfectly.
+

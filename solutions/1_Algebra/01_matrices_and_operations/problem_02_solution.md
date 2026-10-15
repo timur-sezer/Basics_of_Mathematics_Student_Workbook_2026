@@ -137,3 +137,4 @@ For this binary operation to be well-defined:
    \begin{pmatrix} -5 & 10 \\ -3 & -1 \end{pmatrix} + 2\begin{pmatrix} 5 & 0 \\ -1 & 8 \end{pmatrix} = \begin{pmatrix} -5 + 10 & 10 + 0 \\ -3 - 2 & -1 + 16 \end{pmatrix} = \begin{pmatrix} 5 & 10 \\ -5 & 15 \end{pmatrix} = 5A
    $$
    Matches $5A = \begin{pmatrix} 5 & 10 \\ -5 & 15 \end{pmatrix}$ exactly.
+

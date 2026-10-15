@@ -149,3 +149,4 @@ $$
    - $\det(A^2) = 4 \cdot 4 - 4 \cdot 0 = 16 = (\det A)^2 = 4^2$.
    - $\det(A^3) = 8 \cdot 8 - 12 \cdot 0 = 64 = (\det A)^3 = 4^3$.
    This confirms numerical correctness.
+

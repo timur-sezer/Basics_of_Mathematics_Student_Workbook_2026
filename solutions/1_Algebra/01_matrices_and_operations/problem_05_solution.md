@@ -98,3 +98,4 @@ Both methods yield the exact same vector.
    - $u = \frac{\det\begin{pmatrix}6 & -1 \\ 10 & 3\end{pmatrix}}{7} = \frac{18 - (-10)}{7} = \frac{28}{7} = 4$.
    - $v = \frac{\det\begin{pmatrix}2 & 6 \\ 1 & 10\end{pmatrix}}{7} = \frac{20 - 6}{7} = \frac{14}{7} = 2$.
    This precisely recovers vector $x = \begin{pmatrix} 4 \\ 2 \end{pmatrix}$, confirming the calculation.
+

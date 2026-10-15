@@ -112,3 +112,4 @@ We analyze each of the eight products systematically:
    - $AC$ is undefined, while $CA$ is defined ($4 \times 3$).
    - $AD$ is undefined, while $DA$ is defined ($2 \times 3$).
    This illustrates that matrix multiplication does not commute even at the level of whether the operation can be formed.
+

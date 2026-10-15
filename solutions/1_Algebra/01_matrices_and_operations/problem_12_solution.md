@@ -134,3 +134,4 @@ $$
    \begin{pmatrix} 1 & m \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 1 & n \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & n + m \\ 0 & 1 \end{pmatrix} = A^{m+n} \quad \checkmark
    $$
    The exponent laws hold for all $m, n \in \mathbb{N}$.
+

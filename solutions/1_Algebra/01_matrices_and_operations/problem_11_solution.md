@@ -124,3 +124,4 @@ This demonstrates that the commuting matrices are precisely the upper triangular
    B' = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix} \implies AB' = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}, \quad B'A = \begin{pmatrix} 1 & 1 \\ 1 & 2 \end{pmatrix} \ne AB'
    $$
    Confirming that $c = 0$ is strictly required.
+

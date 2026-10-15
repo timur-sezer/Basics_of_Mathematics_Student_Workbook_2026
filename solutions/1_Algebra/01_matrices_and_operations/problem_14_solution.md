@@ -127,3 +127,4 @@ This establishes the required identity.
    $$
    Since $\cos(-\alpha) = \cos\alpha$ and $\sin(-\alpha) = -\sin\alpha$, we observe that $R(-\alpha) = R(\alpha)^T$.
    Thus $R(\alpha)^{-1} = R(\alpha)^T$, proving that $R(\alpha)$ is an orthogonal matrix.
+

@@ -134,3 +134,4 @@ When multiplying matrix $A$ by matrix $B$, each column $j$ of the result is prod
    - $\operatorname{tr}(AB) = -1 + 1 = 0$.
    - $\det(AB) = (-1)(1) - (2)(2) = -1 - 4 = -5$.
    Both values are consistent with the calculated entries.
+

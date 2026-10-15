@@ -145,3 +145,4 @@ Thus, multiplying by $F$ precisely advances the sequence by one step.
      \det(F^5) = \det\begin{pmatrix} 8 & 5 \\ 5 & 3 \end{pmatrix} = (8)(3) - (5)(5) = 24 - 25 = -1 \quad \checkmark
      $$
    The determinant identity holds perfectly.
+

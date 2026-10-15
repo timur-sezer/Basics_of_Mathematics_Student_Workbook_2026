@@ -118,3 +118,4 @@ $$
    - $\det(R) = 0 - (-1)(1) = 1$ (preserves areas).
    - $\det(RS) = \det(SR) = 2 \cdot 1 = 2$.
    Both transformations scale area by $2$, confirming consistency with geometric transformation theory.
+

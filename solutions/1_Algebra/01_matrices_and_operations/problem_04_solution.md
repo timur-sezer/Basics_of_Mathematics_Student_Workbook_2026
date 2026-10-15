@@ -144,3 +144,4 @@ Geometrically and operationally:
    - $\operatorname{tr}(AB) = 8 + 1 = 9$.
    - $\operatorname{tr}(BA) = 2 + 7 = 9$.
    The traces match, further verifying algebraic consistency.
+

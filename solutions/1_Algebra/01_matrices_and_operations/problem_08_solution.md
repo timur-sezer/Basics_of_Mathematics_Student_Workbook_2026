@@ -144,3 +144,4 @@ $$
      \det(A) = 1(12 - 1) - 2(6 - (-1)) + (-1)(2 - (-4)) = 1(11) - 2(7) - 1(6) = 11 - 14 - 6 = -9 \quad \checkmark
      $$
    This verifies the arithmetic of all row operations.
+
