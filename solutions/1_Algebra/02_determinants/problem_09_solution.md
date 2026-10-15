@@ -114,3 +114,4 @@ $$
      $$
      \operatorname{Area} = b \cdot h = \sqrt{10} \cdot \frac{11}{\sqrt{10}} = 11 \quad \checkmark
      $$
+

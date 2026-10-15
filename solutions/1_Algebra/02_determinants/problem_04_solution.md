@@ -105,3 +105,4 @@ Because all sub-diagonal elements are zero, every expansion step along the first
    $$
    \det T = \lambda_1 \lambda_2 \lambda_3 = 2 \cdot (-3) \cdot 7 = -42 \quad \checkmark
    $$
+

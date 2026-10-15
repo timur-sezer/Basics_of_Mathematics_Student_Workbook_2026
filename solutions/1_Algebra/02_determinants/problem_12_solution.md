@@ -135,3 +135,4 @@ When $t = 6$:
 2. **Test of Invertible Value ($t = 0$):**
    - For $t = 0$: $\det A(0) = 6 - 0 = 6 \ne 0 \implies A(0)$ is invertible.
    - For $t = 6$: $\det A(6) = 6 - 6 = 0 \implies A(6)$ is singular.
+

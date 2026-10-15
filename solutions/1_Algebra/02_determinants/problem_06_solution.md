@@ -105,3 +105,4 @@ $$
    $$
    \det A(0) = 0^2 - 2 = -2 \ne 0 \implies A(0) \text{ is invertible, with } A(0)^{-1} = -\frac{1}{2}\begin{pmatrix} 0 & -1 \\ -2 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 1/2 \\ 1 & 0 \end{pmatrix} \quad \checkmark
    $$
+

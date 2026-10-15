@@ -138,3 +138,4 @@ The direct calculation yields **$-6$**, confirming the prediction precisely.
 
 2. **Orientation Check:**
    In three-dimensional space, swapping two basis vectors transforms a right-handed coordinate system into a left-handed coordinate system, reversing the sign of the oriented volume from $+6$ to $-6$.
+

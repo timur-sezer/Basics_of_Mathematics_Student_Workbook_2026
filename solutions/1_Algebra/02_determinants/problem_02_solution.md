@@ -122,3 +122,4 @@ Both methods yield exactly **$33$**.
 
 2. **Invertibility Conclusion:**
    Since $\det A = 33 \ne 0$, matrix $A$ is non-singular and invertible.
+

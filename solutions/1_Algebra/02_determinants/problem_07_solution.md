@@ -120,3 +120,4 @@ Matrix $A$ has dimension $n = 3$, and its determinant is $\det A = -4$.
      -A = \begin{pmatrix} 4 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & -1 \end{pmatrix} \implies \det(-A) = (4)(-1)(-1) = 4 \quad \checkmark
      $$
    All properties are verified.
+

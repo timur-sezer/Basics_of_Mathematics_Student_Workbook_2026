@@ -127,3 +127,4 @@ $$
    $$
    \det A_1 = 1 \cdot \det\begin{pmatrix} 1 & 1 \\ 2 & 3 \end{pmatrix} - 0 + 0 = 1 \cdot ((1)(3) - (1)(2)) = 1 \cdot (3 - 2) = 1 \quad \checkmark
    $$
+

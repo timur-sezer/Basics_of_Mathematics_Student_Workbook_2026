@@ -146,3 +146,4 @@ This is an impossible contradiction. Geometrically, the two equations describe d
    $$
    - Vector $\begin{pmatrix} 1 \\ 2 \end{pmatrix} \in \operatorname{Col}(A) \implies$ consistent (infinite solutions).
    - Vector $\begin{pmatrix} 1 \\ 0 \end{pmatrix} \notin \operatorname{Col}(A) \implies$ inconsistent (no solution).
+

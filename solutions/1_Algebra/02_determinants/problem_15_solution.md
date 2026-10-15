@@ -146,3 +146,4 @@ $$
    \det(B^{-1} A^T B) = \det(B^{-1})\det(A^T)\det(B) = \left(\frac{1}{3}\right)(-2)(3) = -2 \quad \checkmark
    $$
    The result is universally $-2$.
+

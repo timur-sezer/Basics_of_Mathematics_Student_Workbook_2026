@@ -112,3 +112,4 @@ Even though matrix multiplication does not commute ($AB \ne BA$):
    $$
    \det(A) \cdot \det(A^{-1}B) = 3 \cdot \left(-\frac{5}{3}\right) = -5 = \det B \quad \checkmark
    $$
+
