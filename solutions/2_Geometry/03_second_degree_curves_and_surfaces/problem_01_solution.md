@@ -155,20 +155,22 @@ For each curve:
 
 #### 3. Parabola: $y^2 = 8x$ (Opens Right, $p = 4$)
 ```
-              y
-              ^
-              |           . (2, 4)
-              |         .
-              |       .
-              |     .
-  ------------+----+--------> x
-        Directrix  |V(0,0)  F(2,0)
-          x = -2   |     .
-              |       .
-              |         . (2, -4)
-              |           .
+           directrix         y
+             x = -2          ^
+               :             |
+               :             |           * (2, 4)
+               :             |         /
+               :             |       /
+               :             |     /
+   ------------:-------------+----+------*------> x
+               :             |V(0,0)   F(2,0)
+               :             |     \
+               :             |       \
+               :             |         \
+               :             |           * (2, -4)
+               :             |
 ```
-*Labels:* Vertex $V(0, 0)$, Axis of symmetry $y = 0$, Opens right ($x \ge 0$), Focus $F(2, 0)$, Directrix line $x = -2$, Characteristic points $(2, \pm 4)$.
+*Labels:* Vertex $V(0, 0)$ at the coordinate axes intersection $(0, 0)$; axis of symmetry $y = 0$; opens right ($x \ge 0$); focus $F(2, 0)$ aligned vertically below $(2, 4)$ and above $(2, -4)$; directrix $x = -2$ positioned to the left of the vertex.
 
 #### 4. Hyperbola: $\frac{x^2}{9} - \frac{y^2}{4} = 1$ ($a = 3, b = 2$, Asymptotes $y = \pm \frac{2}{3}x$)
 ```

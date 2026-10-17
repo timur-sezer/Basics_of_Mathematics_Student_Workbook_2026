@@ -110,19 +110,20 @@ Surface 2 is a **hyperbolic paraboloid** (commonly called a **saddle surface**).
 
 #### 2. Hyperbolic Paraboloid (Saddle): $z = x^2 - y^2$
 ```
-                     z
-                     ^   Upward parabola (y = 0)
-                     |   z = x^2
-               .     |     .
-              / \    |    / \
-             /   \   |   /   \
-  ----------+-----+--+--+-----+--------> y
-           /       \ | /       \  Downward parabola (x = 0)
-          /         \|/         \ z = -y^2
-         v        (0,0,0)
-         x      [Saddle Point]
+                         z
+                         ^   Trace in plane y = 0: z = x^2 (bends UPWARD)
+                \        |        /
+                 \       |       /
+                  \      |      /
+   ----------------\-----+-----/------------------> y (axis)
+                  .   (0,0,0)   .
+                /     [Origin]    \
+              /       [Saddle]      \
+            /            |            \  Trace in plane x = 0: z = -y^2 (bends DOWNWARD)
+          v
+          x (axis)
 ```
-*Labels:* Coordinate axes $x, y, z$; upward parabola trace $z = x^2$ in plane $y = 0$; downward parabola trace $z = -y^2$ in plane $x = 0$; hyperbolic level curves in planes $z = c \ne 0$; intersecting linear asymptotic traces $y = \pm x$ at $z = 0$.
+*Labels:* Coordinate axes $x, y, z$ meeting at the origin $(0, 0, 0)$; upward-opening parabolic trace $z = x^2$ in the vertical plane $y = 0$ ($xz$-plane); downward-opening parabolic trace $z = -y^2$ in the vertical plane $x = 0$ ($yz$-plane); common vertex at $(0, 0, 0)$ serving as a saddle point (min in $x$, max in $y$).
 
 ---
 

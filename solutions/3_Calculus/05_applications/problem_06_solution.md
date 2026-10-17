@@ -103,18 +103,22 @@ $$
 ```text
        y
        ^
-   9   |                     * (3, 9)
-   8   |                    *|
-   7   |                   * |
-   6   |                  *  |
-   5   |                 *   |
-   4   |                *    |
-   3 --+-- - - - - - - *-----+  y = f_avg = 3
-   2   |             * (c, 3)|
-   1   |          *          |
--------+--------*------------+---------> x
-       0       c = √3 ≈ 1.73 3
+   9   |                       * (3, 9)
+   8   |                      /|
+   7   |                     / |
+   6   |                    /  |
+   5   |                   /   |
+   4   |                  /    |
+   3 --+ - - - - - - - - *-----+  y = f_avg = 3 [Mean Line]
+   2   |                /:     |  (c, 3) = (√3, 3)
+   1   |              /  :     |
+       |             /   :     |
+   ----+*-----------+----+-----+---------> x
+       0|           1    :     3
+     (0,0)               :
+                      c = √3 ≈ 1.732
 ```
+*Labels:* Parabola $y = x^2$ starts at the origin $(0, 0)$; horizontal line $y = f_{\text{avg}} = 3$ represents the mean value height; vertical dashed line $x = c = \sqrt{3} \approx 1.732$ rises from the $x$-axis to intersect the parabola exactly at $(c, 3)$ on the mean line; equivalent rectangle on $[0, 3]$ has base $3$ and height $3$ (Area $= 9$).
 
 1. **The Equivalent Rectangle:**
    Consider a rectangle with base along the $x$-axis from $x = 0$ to $x = 3$ (base length $= 3$) and height equal to $f_{\text{avg}} = 3$.

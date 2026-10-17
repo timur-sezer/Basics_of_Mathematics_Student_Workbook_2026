@@ -69,18 +69,19 @@ $$
 - **Branch 2 (Constant on $[1, 3]$):** Horizontal plateau at height $y = 2$ from $(1, 2)$ to $(3, 2)$.
 
 ```text
-       y
-       ^
-   2   |                   *-----------* (3, 2)
-       |                  /|           |
-       |                 / |           |
-   1   |                /  |           |
-       |               /   |           |
--------+-------------*-----+-----------+---------> x
-      -1             0     1           3
-    (-1, 0)          |<- - - - - - - ->|
-                     Triangle   Rectangle
+                       y
+                       ^
+                   2   |               *-----------* (3, 2)
+                       |              /|           |
+                   1   |             * |           |
+                       |        (0,1)/ |           |
+   --------------------*-------------+-------------+---------> x
+                    (-1, 0)          0 1           3
+                       |<--- base 2 --->|<-- base 2 ->|
+                          Triangle          Rectangle
+                         Area = 2           Area = 4
 ```
+*Labels:* Linear branch begins at $(-1, 0)$ on the $x$-axis, crosses the $y$-axis at $(0, 1)$, and reaches $(1, 2)$; constant horizontal plateau extends from $(1, 2)$ to $(3, 2)$ at uniform height $2$; triangle on $[-1, 1]$ has base $2$ and height $2$ (Area $= 2$); rectangle on $[1, 3]$ has base $2$ and height $2$ (Area $= 4$).
 
 ---
 

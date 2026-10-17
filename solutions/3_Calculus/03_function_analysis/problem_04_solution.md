@@ -178,14 +178,22 @@ $$
 
 2. **ASCII Visual Profile:**
 ```text
-           y
-           ^
-       3   |   *                     *    x = -1        x = 1
-       2   |    *                   *       |             |
-       1   |     *                 *        |             |
-- - - -0 - + - - -* - - - - - - - * - - - - + - - - - - - + - - - - - - > x  (y = 0)
-      -1   |        |  (0, -1) *  |         |             |
-      -2   |        |   *       * |         |             |
-      -3   |        |  *         *|         |             |
+                 :             y             :
+      x = -1     :             ^             :     x = 1
+   (Asymptote)   :             |             :  (Asymptote)
+        |        :             |             :       |
+        |        :             |             :       |
+         \       :             |             :      /
+          \      :             |             :     /
+           ------:             |             :-----    (Outer branches > 0, y -> 0+)
+   --------------:-------------+-------------:-----------------> x (Horizontal Asymptote y = 0)
+                 :             | (0, 0)      :
+                 :             |             :
+                 :          (0, -1)          :
+                 :             * [Local Max] :
+                 :           / | \           :
+                 :          /  |  \          :
+                 :         |   |   |         :
+                 :         v   |   v         : (Middle branch: plunges to -inf)
 ```
-The central branch is a downward-opening bell between $x = -1$ and $x = 1$, and the outer branches curve upward toward the asymptotes, confirming every analytical conclusion.
+*Labels:* Vertical asymptote $x = -1$ strictly to the left of the $y$-axis; vertical asymptote $x = 1$ strictly to the right of the $y$-axis; both outer branches ($x < -1$ and $x > 1$) stay strictly positive ($y > 0$) and never touch or cross the $x$-axis; middle branch ($-1 < x < 1$) stays strictly at or below $-1$ ($y \le -1$), peaking at the strict local maximum $(0, -1)$ on the $y$-axis and plunging toward $-\infty$ at both asymptotes.

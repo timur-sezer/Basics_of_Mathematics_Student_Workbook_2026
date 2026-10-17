@@ -176,19 +176,23 @@ The origin **$(0, 0)$** is the unique intersection point with both coordinate ax
 
 **ASCII Graph Sketch:**
 ```text
-           y
-           ^
-    0.5    |                     * M(1, 0.5)
-           |                   *   *
-    0.25   |                 *       * I3(√3 ≈ 1.73, 0.433)
-           |                *          *  *  *  *  *  *  *  * (y = 0)
-   --------+---------------*-----------------------------------> x
-   -4  -3  | -2   -1      0 (0, 0) I2       2     3     4
- (y = 0)   |*  *  *  *
-   -0.25   |            *
-           |           *   *
-   -0.5    |             * m(-1, -0.5)
+                               y
+                               ^
+                     0.5       |             * M(1, 0.5) [Local & Global Max]
+                               |            / \
+                    0.25       |           /   * I_3(√3, 0.433)
+                               |          /     \
+                               |         /       \ - - - - (approaches y = 0+)
+   - - - - - - - - - - - - - - +--------*---------------------------------> x (y = 0 Asymptote)
+        (approaches y = 0-) \  |     (0, 0) I_2
+                         \     * I_1(-√3, -0.433)
+                          \   /|
+                           \ / |
+                            *  | m(-1, -0.5) [Local & Global Min]
+                    -0.5       |
+                               v
 ```
+*Labels:* Single origin $(0, 0)$ at the intersection of the coordinate axes, which also serves as the central inflection point $I_2(0, 0)$; point symmetry with respect to $(0, 0)$ ($f(-x) = -f(x)$); global minimum $m(-1, -0.5)$ located strictly to the left of the $y$-axis; global maximum $M(1, 0.5)$ located strictly to the right of the $y$-axis; all three inflection points marked: $I_1(-\sqrt{3}, -\sqrt{3}/4) \approx (-1.732, -0.433)$, $I_2(0, 0)$, and $I_3(\sqrt{3}, \sqrt{3}/4) \approx (1.732, 0.433)$; left tail approaches $y = 0$ from below as $x \to -\infty$; right tail approaches $y = 0$ from above as $x \to +\infty$.
 
 ---
 

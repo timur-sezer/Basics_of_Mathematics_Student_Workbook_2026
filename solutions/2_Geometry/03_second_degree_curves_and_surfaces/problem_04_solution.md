@@ -92,31 +92,32 @@ Using the focal parameter $p = 6$:
 Below is the sketch of the right-opening parabola $y^2 = 12x$ plotted using the vertex and calculated characteristic points:
 
 ```
-              y
-              ^
-            6 |                       * P_1(3, 6)
-              |                     .
-            4 |                   .
-              |                 .
-            2 |               .
-              |             .
-  ------------+-----------+-----------+----------> x
-       Directrix|       V(0, 0)     F(3, 0)
-         x = -3 | [Axis of Symmetry: y = 0]
-           -2 |             .
-              |               .
-           -4 |                 .
-              |                   .
-           -6 |                       * P_2(3, -6)
-              |
+           directrix         y
+             x = -3          ^
+               :             |
+             6 :             |                        * P_1(3, 6)
+               :             |                      /
+             4 :             |                    /
+               :             |                  /
+             2 :             |                /
+               :             |              /
+   ------------:-------------+------------+-----------*-----------> x
+               :             | V(0, 0)                F(3, 0)
+            -2 :             | [x=0, y=0]   \
+               :             |                \
+            -4 :             |                  \
+               :             |                    \
+            -6 :             |                      \
+               :             |                        * P_2(3, -6)
+               :             |
 ```
 
 *Geometric Features Labeled on the Sketch:*
-- **Vertex:** $V(0, 0)$ at the origin.
-- **Axis of Symmetry:** The line $y = 0$ ($x$-axis).
-- **Plotted Points:** $P_1(3, 6)$ and $P_2(3, -6)$ forming the vertical latus rectum chord through the focus $F(3, 0)$.
-- **Directrix:** The vertical line $x = -3$, equidistant from the vertex as the focus.
-- **Opening:** The curve strictly opens towards the right ($x \ge 0$) and is symmetric with respect to $y = 0$.
+- **Vertex:** $V(0, 0)$ located precisely at the intersection of the coordinate axes ($x = 0, y = 0$), where both parabolic arms join smoothly.
+- **Axis of Symmetry:** The line $y = 0$ ($x$-axis), with exact reflective symmetry between the upper and lower arms.
+- **Focus & Plotted Points:** $P_1(3, 6)$, Focus $F(3, 0)$, and $P_2(3, -6)$ all strictly align vertically along $x = 3$.
+- **Directrix:** The vertical line $x = -3$ drawn as a separate vertical line to the left of the vertex, equidistant from $V(0, 0)$ as the focus $F(3, 0)$.
+- **Opening:** The curve strictly curves rightward into the half-plane $x \ge 0$.
 
 ---
 

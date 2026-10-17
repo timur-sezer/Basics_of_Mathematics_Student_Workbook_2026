@@ -79,7 +79,7 @@ $$
    - **$(\sqrt{2}, \infty)$:** $f'(2) = 4(2)(4 - 2) = +16 > 0 \implies \mathbf{f}$ is strictly increasing.
 
 4. **Coordinates and Character of Extrema:**
-   - **At $x = -\sqrt{2}$:** Transition from $-$ to $+$ $\implies$ **strict global minimum**:
+   - **At $x = -\sqrt{2}$:** Transition from $-$ to $+$ $\implies$ **strict local minimum and global minimum**:
      $$
      f(-\sqrt{2}) = (-\sqrt{2})^4 - 4(-\sqrt{2})^2 = 4 - 8 = -4 \implies \mathbf{m_1(-\sqrt{2}, -4)}
      $$
@@ -87,10 +87,11 @@ $$
      $$
      f(0) = 0^4 - 4(0)^2 = 0 \implies \mathbf{M(0, 0)}
      $$
-   - **At $x = +\sqrt{2}$:** Transition from $-$ to $+$ $\implies$ **strict global minimum**:
+   - **At $x = +\sqrt{2}$:** Transition from $-$ to $+$ $\implies$ **strict local minimum and global minimum**:
      $$
      f(\sqrt{2}) = (\sqrt{2})^4 - 4(\sqrt{2})^2 = 4 - 8 = -4 \implies \mathbf{m_2(\sqrt{2}, -4)}
      $$
+   *(Note on classification: Both $m_1$ and $m_2$ are strict local minima and both are global minima with minimum value $-4$. However, neither is a strict global minimum because the global minimum value is attained at two distinct points, $x = -\sqrt{2}$ and $x = \sqrt{2}$.)*
 
 ---
 
@@ -126,29 +127,31 @@ $$
 ### Step 4: Graphical Sketch of the "W-Curve"
 
 ```text
-            y
-            ^
-        2   |   *                               *
-        1   |    *                             *
-   -----+----+----+-------------*-------------+----+----> x
-       -2   |      *         (0, 0) M        *     2
-            |       *       *       *       *
-       -1   |        *     *         *     *
-       -2 --+---------*---*-----------*---*---- y = -20/9 (Inflection line)
-            |       I1 * *             * * I2
-       -3   |           *               *
-       -4 --+------------*-------------*------- y = -4 (Global Minimum)
-            |      m1(-√2, -4)     m2(√2, -4)
+                               y
+                               ^
+         2   \                 |                 /
+         1    \                |                /
+   ------------*---------------+---------------*------------> x
+             (-2, 0)           * (0, 0) M    (2, 0)
+        -1      \             /|\             /
+                 \           / | \           /
+        -2 -------*---------+--+--+---------*------- y = -20/9 [Inflection line]
+                 I_1       /   |   \       I_2
+        -3        \       /    |    \       /
+                   \     /     |     \     /
+        -4 ---------*----+-----+-----+----*--------- y = -4 [Global Minima]
+                 m_1(-√2,-4)   |        m_2(√2,-4)
 ```
 
-The curve exhibits the characteristic "W" profile of a double-well potential:
-- Starts at $+\infty$ for $x \to -\infty$, passes through $(-2, 0)$.
-- Reaches first global minimum at $(-\sqrt{2}, -4)$.
-- Reverses curvature at inflection point $I_1(-\sqrt{2/3}, -20/9)$.
-- Peaks at local maximum $(0, 0)$ where it touches the $x$-axis.
-- Reverses curvature at inflection point $I_2(\sqrt{2/3}, -20/9)$.
-- Reaches second global minimum at $(\sqrt{2}, -4)$.
-- Passes through $(2, 0)$ and climbs to $+\infty$ as $x \to +\infty$.
+*Geometric Features and Landmark Sequence:*
+- **Coordinate axes:** Meet at the central maximum $M(0, 0)$, so the vertical $y$-axis passes directly through $(0, 0)$.
+- **Zeros:** Only three roots occur on the curve: $x = -2$, $x = 0$, and $x = 2$.
+- **Strict Horizontal Order:**
+  $$
+  -2 < -\sqrt{2} \approx -1.414 < -\sqrt{2/3} \approx -0.816 < 0 < \sqrt{2/3} \approx 0.816 < \sqrt{2} \approx 1.414 < 2
+  $$
+- **Inflection Placement:** $I_1(-\sqrt{2/3}, -20/9)$ is strictly positioned between minimum $m_1(-\sqrt{2}, -4)$ and central maximum $M(0, 0)$; $I_2(\sqrt{2/3}, -20/9)$ is strictly positioned between $M(0, 0)$ and minimum $m_2(\sqrt{2}, -4)$.
+- **Global Minima:** Value $-4$ attained at both $m_1(-\sqrt{2}, -4)$ and $m_2(\sqrt{2}, -4)$. Both are strict local minima and global minima, but neither is a strict global minimum because the minimum value is achieved at two distinct points.
 
 ---
 

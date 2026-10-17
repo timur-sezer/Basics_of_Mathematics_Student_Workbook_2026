@@ -28,11 +28,12 @@ $$
    \int x^\alpha \, dx = \frac{x^{\alpha + 1}}{\alpha + 1} + C
    $$
 
-3. **Domain Constraints and Antiderivatives:**
-   An antiderivative exists only on the intervals where the integrand is defined and continuous.
-   - Even radicals ($\sqrt{x} = x^{1/2}$) require non-negative radicands: $x \ge 0$.
-   - Denominators ($\frac{3}{x^2}$) cannot be zero: $x \neq 0$.
-   - The domain of the sum is the intersection of the domains of the individual components.
+3. **Existence of Antiderivatives and Domain Constraints:**
+   - **Sufficient Continuity Theorem:** By the Fundamental Theorem of Calculus, continuity of a function on an interval is a **sufficient** condition for the existence of an antiderivative on that interval. It is not a necessary condition; a derivative can be discontinuous and still have its original function as an antiderivative. In this exercise, the integrand is continuous on its maximal interval of definition $(0, \infty)$, satisfying this sufficient condition.
+   - **Domain Restrictions:**
+     - Even radicals ($\sqrt{x} = x^{1/2}$) require non-negative radicands: $x \ge 0$.
+     - Denominators ($\frac{3}{x^2}$) cannot be zero: $x \neq 0$.
+     - The domain of the sum is the intersection of the domains of the individual components.
 
 ---
 

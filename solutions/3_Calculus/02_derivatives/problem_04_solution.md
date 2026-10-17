@@ -30,7 +30,7 @@ $$
    $$
 
 3. **Prerequisite for Differentiability:**
-   A function $f(x)$ can be differentiable at a point $x_0$ if and only if $f$ is defined in an open neighborhood containing $x_0$. If $x_0 \notin \mathcal{D}_f$, the derivative $f'(x_0)$ cannot exist by definition, as the difference quotient $\frac{f(x_0 + h) - f(x_0)}{h}$ is undefined.
+   Being defined on an open neighborhood containing $x_0$ is a **necessary condition** for differentiability at $x_0$, but it **does not guarantee it** (for example, $f(x) = |x|$ is defined on an open neighborhood of $0$, yet is not differentiable at $x = 0$). If $x_0 \notin \mathcal{D}_f$, the derivative $f'(x_0)$ cannot exist by definition, as the difference quotient $\frac{f(x_0 + h) - f(x_0)}{h}$ cannot even be formed.
 
 ---
 
@@ -103,10 +103,12 @@ $$
    $$
    \mathcal{D}_{f'} = \{x \in \mathcal{D}_f : f'(x) \text{ exists}\}
    $$
-   Since $x = 1 \notin \mathcal{D}_f$, it cannot belong to $\mathcal{D}_{f'}$. Looking at the formula $f'(x) = \frac{x^2 - 2x - 1}{(x - 1)^2}$, substituting $x = 1$ would cause division by zero in the derivative as well:
+   Because $x = 1 \notin \mathcal{D}_f$, the derivative $f'(1)$ is strictly **undefined**; we must never evaluate or substitute $x = 1$ into the derivative formula.
+   Instead, we distinguish $f'(1)$ from the limit of $f'(x)$ as $x$ approaches $1$:
    $$
-   \frac{1^2 - 2(1) - 1}{(1 - 1)^2} = \frac{-2}{0^+} \to -\infty
+   \lim_{x \to 1} f'(x) = \lim_{x \to 1} \frac{x^2 - 2x - 1}{(x - 1)^2} = \lim_{x \to 1} \frac{-2}{(x - 1)^2} = -\infty
    $$
+   This asymptotic limit shows that tangent slopes steepen negatively towards vertical as $x \to 1$, while $f'(1)$ itself does not exist.
 
 2. **Geometric Significance (Vertical Asymptote):**
    The point $x = 1$ represents a vertical asymptote of the curve $y = f(x)$:

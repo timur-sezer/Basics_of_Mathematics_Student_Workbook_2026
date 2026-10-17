@@ -29,12 +29,12 @@ $$
    $$
    f'_-(x_0) = f'_+(x_0)
    $$
-   If $p(x_0) = 0$ and $p'(x_0) \neq 0$, the curve $y = p(x)$ crosses the $x$-axis transversally at a non-zero slope $m = p'(x_0)$.
-   The absolute value reflects the negative branch, causing the incoming and outgoing slopes to have opposite signs:
+   If $p(x_0) = 0$ and $p'(x_0) = m \neq 0$, the base curve $y = p(x)$ crosses the $x$-axis transversally at non-zero slope $m$.
+   The absolute value operator reflects the portion below the axis, causing the incoming and outgoing one-sided slopes at $x_0$ to have opposite signs:
    $$
-   f'_-(x_0) = -m, \qquad f'_+(x_0) = +m
+   \{- |m|, +|m|\}
    $$
-   Because $-m \neq +m$ (since $m \neq 0$), a **sharp corner (kink)** is created at $(x_0, 0)$, rendering the function non-differentiable.
+   Because $-|m| \neq +|m|$ (since $m \neq 0$), a **sharp corner (kink)** is created at $(x_0, 0)$, rendering the function non-differentiable at $x_0$.
 
 3. **Fermat's Theorem for Critical Points:**
    A local extremum of a function on an open interval can occur at:
@@ -57,6 +57,22 @@ $$
      - On $(-\infty, -2) \cup (2, \infty)$: $p(x) > 0$.
      - On $(-2, 2)$: $p(x) < 0$ (the parabolic trough dips below the $x$-axis, reaching $-4$ at $x = 0$).
 
+2. **Required Sketch of Base Parabola $p(x) = x^2 - 4$:**
+```text
+            y
+            ^
+        2   | \                             /
+        1   |  \                           /
+   ---------*---+-------------------------*----------> x
+         (-2, 0)| (0, 0)                 (2, 0)
+       -1       | \                       /
+       -2       |  \                     /
+       -3       |   \                   /
+       -4 ------+----*-----------------+------- y = -4 [Vertex]
+                |    V(0, -4)
+```
+*Labels:* Vertex $V(0, -4)$ on the $y$-axis; roots at $(-2, 0)$ and $(2, 0)$; negative parabolic trough on $(-2, 2)$ below the $x$-axis.
+
 ---
 
 ### Step 2: Piecewise Formulation of $f(x) = |x^2 - 4|$
@@ -66,9 +82,9 @@ $$
 f(x) = \begin{cases} x^2 - 4, & \text{if } x^2 - 4 \ge 0 \iff x \in (-\infty, -2] \cup [2, \infty) \\ -(x^2 - 4) = 4 - x^2, & \text{if } x^2 - 4 < 0 \iff x \in (-2, 2) \end{cases}
 $$
 
-**Effect of the Absolute Value:**
-- For $|x| \ge 2$, the curve is unchanged.
-- For $|x| < 2$, the negative parabolic trough is reflected across the $x$-axis into an upward-opening arch with peak at $(0, 4)$.
+**Effect of the Absolute Value (Reflection):**
+- For $|x| \ge 2$, $p(x) \ge 0$, so the curve is completely unchanged.
+- For $|x| < 2$, $p(x) < 0$; the absolute value reflects the negative parabolic trough upward across the $x$-axis into the **downward-opening arch** $y = 4 - x^2$ with peak (local maximum) at $(0, 4)$.
 
 ---
 
@@ -138,23 +154,25 @@ The two-sided derivative $f'(-2)$ **does not exist**.
 
 2. **Connection to Fermat's Theorem:**
    - Because $f(x) = |x^2 - 4| \ge 0$ for all $x \in \mathbb{R}$, and $f(\pm 2) = 0$, the points $(-2, 0)$ and $(2, 0)$ are **absolute (global) minima** of $f(x)$.
-   - However, at these absolute minima, the derivative is **not zero**: $f'(\pm 2) \neq 0$ because the derivative does not exist.
+   - However, at these absolute minima, the derivative is **strictly undefined** ($f'(\pm 2)$ does not exist, rather than being a nonzero value or zero).
    - This provides a stark warning: optimization cannot rely solely on solving $f'(x) = 0$. One must always check the singular points where $f'(x)$ fails to exist.
 
-**ASCII Graph Sketch:**
+**ASCII Graph Sketch of $f(x) = |x^2 - 4|$:**
 ```text
             y
             ^
-        5   |   *                               *
-        4   |    *           * (0, 4) Local Max*
-        3   |     *        *   *              *
-        2   |      *      *     *            *
-        1   |       *    *       *          *
-   -----+----+-------*--*---------*--*-----+----+----> x
-       -3   |     (-2, 0)         (2, 0)   3
-            |     Corner          Corner
-            |     Global Min      Global Min
+        5   | \                                 /
+        4   |  \          * (0, 4) [Local Max] /
+            |   \       / | \                 /
+        3   |    \     /  |  \               /
+        2   |     \   /   |   \             /
+        1   |      \ /    |    \           /
+   ---------+-------*-----+-----*-------------+---------> x
+           -3    (-2, 0)  0   (2, 0)          3
+                 Corner  (0,0) Corner
+               [Global Min]  [Global Min]
 ```
+*Labels:* Vertex $(0, 4)$ on the $y$-axis (local maximum); corners at $(-2, 0)$ and $(2, 0)$ on the $x$-axis (global minima where derivative is undefined); downward-opening arch on $(-2, 2)$; upward-opening branches on $(-\infty, -2]$ and $[2, \infty)$.
 
 ---
 

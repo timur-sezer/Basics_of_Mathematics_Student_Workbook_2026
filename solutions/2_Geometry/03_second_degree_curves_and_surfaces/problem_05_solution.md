@@ -119,26 +119,31 @@ As the distance from the center increases ($|x| \to \infty$), the constant term 
 Below is the sketch of the horizontal hyperbola $\frac{x^2}{16} - \frac{y^2}{9} = 1$ with its vertices and asymptotes:
 
 ```
-                  y
-           \      ^      /  Asymptote y = 3x/4
-             \    |    /
-          .    \  |  /    .
-        /        \|/        \
-  -----+----------+----------+-----> x
-      /(-4, 0)  Center     (4, 0)\
-     / [Vertex]  (0,0)   [Vertex] \
-        \        /|\        /
-          '    /  |  \    '
-             /    |    \
-           /      |      \  Asymptote y = -3x/4
-                  |
+                                y
+       : (asymptote y = -3x/4)  ^  : (asymptote y = 3x/4)
+         :                      |                      :
+           :                    |                    :
+             :                  |                  :
+    \          :                |                :          /
+      \          :              |              :          /
+        \          :            |            :          /
+   -------*----------:----------+----------:----------*-------> x
+       (-4, 0)         :      (0, 0)     :          (4, 0)
+    [left vertex]        :    Center   :        [right vertex]
+        /          :            |            :          \
+      /          :              |              :          \
+    /          :                |                :          \
+             :                  |                  :
+           :                    |                    :
+         :                      |                      :
 ```
 
 *Geometric Features Labeled on the Sketch:*
-- **Center:** $(0, 0)$ at the intersection of the coordinate axes and asymptotes.
-- **Transverse Axis:** Along the $x$-axis; Vertices at $(-4, 0)$ and $(4, 0)$ with real semiaxis $a = 4$.
-- **Asymptote Lines:** $y = \frac{3}{4}x$ and $y = -\frac{3}{4}x$ passing through the origin.
-- **Branches:** Two disjoint branches opening horizontally to the left ($x \le -4$) and to the right ($x \ge 4$), asymptotically converging towards the lines $y = \pm \frac{3}{4}x$ as $|x| \to \infty$.
+- **Center:** $(0, 0)$ at the intersection of the coordinate axes and both asymptotes.
+- **Asymptotes:** The lines $y = \frac{3}{4}x$ and $y = -\frac{3}{4}x$ passing through $(0, 0)$, drawn using dotted style (`:`) to unambiguously distinguish them from the hyperbola branches.
+- **Left Branch ($x \le -4$):** Has its rightmost point at vertex $(-4, 0)$; both arms curve outward to the left toward $-\infty$, approaching the asymptotes from the interior of the horizontal cones.
+- **Right Branch ($x \ge 4$):** Has its leftmost point at vertex $(4, 0)$; both arms curve outward to the right toward $+\infty$, approaching the asymptotes from the interior of the horizontal cones.
+- **Forbidden Region:** The vertical strip $-4 < x < 4$ contains no real points of the hyperbola, since $\frac{x^2}{16} = 1 + \frac{y^2}{9} \ge 1 \implies |x| \ge 4$.
 
 ---
 

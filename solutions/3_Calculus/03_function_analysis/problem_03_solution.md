@@ -153,21 +153,26 @@ This represents the standard hyperbola $y = \frac{3}{x}$ translated horizontally
 
 **ASCII Graph Sketch:**
 ```text
-            y
-            ^                 | (x = 2)
-        5   |                 |    *
-        4   |                 |   * (3, 4)
-        3   |                 |  *
-        2   |                 | *
-  - - - 1 - + - - - - - - - - +* - - - - - - - - - -  (y = 1) Horizontal Asymptote
-        0 --+--*------+-------+-------*-------------> x
-       -1   | (-1, 0) |       |* (5, 2)
-            |* (0,-0.5)       |
-       -2   | * (1, -2)       |
-       -3   |  *              |
-       -4   |   *             |
-            |    *            | Vertical Asymptote
+                       y               : (Vertical Asymptote x = 2)
+                       ^               :
+                   5   |               :   | (Right branch: decreases from +inf)
+                   4   |               :   * (3, 4)
+                   3   |               :    \
+                   2   |               :     * (5, 2)
+   - - - - - - - - 1 - + - - - - - - - : - - - \ - - - - - - (y = 1) Horizontal Asymptote
+             (-1,0)    |               :        ------ (approaches y = 1 from above, stays > 1)
+   ------------*-------+---------------+---------------------> x
+             -1        | (0, 0)        : 2       3     4     5
+                       |* (0, -0.5)    :
+                  -1   |               :
+                       |               :
+                  -2   |       * (1,-2):
+                       |        \      :
+                  -3   |         \     :
+                       |          |    : (Left branch: plunges to -inf as x -> 2-)
+                       v          v    :
 ```
+*Labels:* Vertical asymptote $x = 2$ (dashed); horizontal asymptote $y = 1$ (dashed); zero at $(-1, 0)$ strictly to the left of the $y$-axis; $y$-intercept at $(0, -0.5)$; point $(1, -2)$ with left branch decreasing toward $-\infty$ as $x \to 2^-$; right branch decreasing from $+\infty$ near $x = 2^+$, passing through $(3, 4)$ and $(5, 2)$, and approaching $y = 1$ asymptotically from above without ever crossing $y = 1$ or the $x$-axis.
 
 ---
 

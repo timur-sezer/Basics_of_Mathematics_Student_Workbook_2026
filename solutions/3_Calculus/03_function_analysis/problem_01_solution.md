@@ -32,7 +32,7 @@ $$
    Let $c$ be a critical point ($f'(c) = 0$):
    - If $f'(x)$ changes sign from **positive to negative** at $c$, then $f(c)$ is a **strict local maximum**.
    - If $f'(x)$ changes sign from **negative to positive** at $c$, then $f(c)$ is a **strict local minimum**.
-   - If $f'(x)$ does not change sign, $c$ is a horizontal inflection point, not an extremum.
+   - If $f'(x)$ does not change sign across $c$, this rules out a strict turning extremum in this test, but does not by itself prove an inflection point; establishing an inflection point requires verifying a change of concavity ($f''(x)$ changing sign across $c$).
 
 4. **Curvature and Inflection Points (Second Derivative):**
    - If $f''(x) > 0$, the graph is **concave upward** ($\cup$).
@@ -183,22 +183,24 @@ $$
 
 **ASCII Graph Sketch:**
 ```text
-            y
-            ^
-        3   |
-   Local Max|   * M(0, 2)
-        2 --+--***-------
-            | *   *
-        1   |*     *
-   ---------+-------*-------*---------------------> x
-       -1   |        * I(1, 0)   * (2.732, 0)
-       (-0.732, 0)    *         *
-       -1   |          *       *
-            |           *     *
-       -2 --+------------***-+
-            |       Local Min * m(2, -2)
-       -3   |
+                     y
+                     ^
+         3           |
+                     * M(0, 2) [Local Maximum on y-axis]
+         2         / | \
+                 /   |   \
+         1     /     |     \
+   ----------*-------+------*-------*-------> x
+      (1-√3, 0)      |    I(1,0)    | (1+√3, 0)
+     [≈ -0.732]      |              | [≈ 2.732]
+        -1   |       |               \     /
+             |       |                \   /
+        -2   |       +------------------* m(2, -2) [Local Minimum]
+             |       |
+        -3   v       |
+   (rises from -inf) v
 ```
+*Labels:* Local maximum $M(0, 2)$ lies on the $y$-axis; left branch rises from $-\infty$ through $x$-intercept $(1-\sqrt{3}, 0) \approx (-0.732, 0)$ to $M(0, 2)$; curve decreases through inflection point $I(1, 0)$ to local minimum $m(2, -2)$; right branch rises through $x$-intercept $(1+\sqrt{3}, 0) \approx (2.732, 0)$ toward $+\infty$.
 
 ---
 

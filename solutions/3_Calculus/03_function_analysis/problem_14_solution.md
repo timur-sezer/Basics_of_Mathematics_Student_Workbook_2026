@@ -170,18 +170,22 @@ Thus, $g(x)$ is a specific member of the family of antiderivatives of $f'(x)$, w
 
 **ASCII Graph of $g(x)$:**
 ```text
-            y
-            ^
-        4   |         * M(-2, 10/3 ≈ 3.33)
-        3   |       *   *
-        2   |      *     *
-        1   |     *       * I(-0.5, 13/12 ≈ 1.08)
-   -----+---*----+---------*---------+---------*----------> x
-       -4   |   -2        (0, 0)     1         2
-       (-3.31, 0)                     *       (1.81, 0)
-       -1   |                          * m(1, -7/6 ≈ -1.17)
-       -2   |
+                               y
+                               ^
+         4                     |
+                 * M(-2, 10/3) |
+         3      / \            |
+               /   \           |
+         2    /     \          |
+             /       * I(-0.5, 13/12)
+         1  /         \        |
+   --------*-----------+-------*---------+-------*-------------> x
+      (-3.31, 0)       -2    (0, 0)      1   (1.81, 0)   /
+        -1                     |          \             /
+                               |           * m(1, -7/6)/
+        -2                     |
 ```
+*Labels:* Coordinate axes cross at $(0, 0)$; rising branch ascends from $-\infty$ through $x$-intercept $(-3.31, 0)$ to local maximum $M(-2, 10/3)$ strictly to the left of the $y$-axis; curve descends through inflection point $I(-0.5, 13/12)$ (also left of the $y$-axis) and passes through the origin $(0, 0)$ to local minimum $m(1, -7/6)$ strictly to the right of the $y$-axis; rising branch ascends from $m(1, -7/6)$ through $x$-intercept $(1.81, 0)$ to $+\infty$.
 
 ---
 

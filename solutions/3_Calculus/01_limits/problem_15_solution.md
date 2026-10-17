@@ -173,13 +173,24 @@ For all $x \neq 3$, the graph of $f(x)$ is the straight line $y = x - 1$. As $x 
    $$
    For all $n \le 10^5$, $e^{10^6 - n}$ is astronomical, so $b_n \approx a_n \to 2.5$. Any human or computer testing $n \le 100\,000$ will observe convergence to $2.5000$. Yet for $n \gg 10^6$, the added term equals $1$, so the true limit is $3.5$. No finite calculation can rule out such delayed transitions.
 
-4. **Floating-Point Arithmetic and Catastrophic Cancellation:**
-   If we evaluate $a_n = \sqrt{n^2 + 5n} - n$ on a computer using standard double-precision (IEEE 754, ~16 decimal digits) for $n = 10^{16}$:
-   $$
-   n^2 = 10^{32}, \quad 5n = 5 \times 10^{16}
-   $$
-   Since $10^{32} + 5 \times 10^{16}$ rounds to $10^{32}$ in 16-digit floating-point, the computer calculates $\sqrt{10^{32}} - 10^{16} = 10^{16} - 10^{16} = 0$.
-   Thus, numerical computation falsely outputs that $a_n \to 0$ for very large $n$! Only deductive analytical algebra reveals the correct limit $2.5$.
+4. **Floating-Point Arithmetic, Catastrophic Cancellation, and Radicand Rounding:**
+   When evaluating $a_n = \sqrt{n^2 + 5n} - n$ on a computer using standard IEEE 754 double precision (`binary64`, 53 bits of mantissa, ~15–17 decimal digits):
+   - **Evaluation at $n = 10^{16}$:**
+     - The represented terms are $n = 10^{16}$, $n^2 = 10^{32}$, and $5n = 5 \times 10^{16}$.
+     - The machine spacing ($\text{ULP}$, unit in the last place) near $10^{32}$ is $2^{107 - 53} \approx 1.8014 \times 10^{16}$.
+     - Because $5n = 5 \times 10^{16} \approx 2.775 \times \text{ULP}$, the $5n$ term is **not simply lost** in the radicand.
+     - The addition rounds $n^2 + 5n$ to the nearest float, $1.00000000000000059409 \times 10^{32}$ (a quantized step of $+3 \times \text{ULP} \approx 5.4043 \times 10^{16}$).
+     - Taking the square root yields $\sqrt{n^2 + 5n} \approx 1.00000000000000020000 \times 10^{16}$.
+     - Finally, subtracting $n = 10^{16}$ produces the computed direct output:
+       $$
+       \text{Direct evaluation: } \sqrt{n^2 + 5n} - n = 2.0
+       $$
+     - This severely deviates from the true mathematical limit ($2.5$) due to **cancellation after taking the square root** (loss of precision from subtracting two nearly identical large floats). By contrast, evaluating the algebraically stable rationalized formula $\frac{5}{\sqrt{1 + 5/n} + 1}$ in binary64 yields $2.5$.
+   - **Distinguishing Cancellation from Radicand Rounding (e.g., at $n = 10^{17}$):**
+     - For an even larger input like $n = 10^{17}$, $n^2 = 10^{34}$ has $\text{ULP} \approx 1.1529 \times 10^{18}$.
+     - Here $5n = 5 \times 10^{17} < \frac{1}{2}\text{ULP}$, so the entire $5n$ term is absorbed by **rounding of the radicand**: $n^2 + 5n$ rounds directly to $n^2$.
+     - Consequently, $\sqrt{n^2} - n = n - n = 0.0$.
+   - Thus, empirical computations can falsely output $2$ (due to cancellation) or $0$ (due to radicand absorption). Only deductive analytical algebra reliably guarantees the true limit $2.5$.
 
 5. **Sketches Lack Infinite Precision:**
    A drawing has a finite physical resolution (pen stroke width, pixel size). A graph cannot depict an open interval of radius $\delta = 10^{-100}$ around a puncture, nor can it show the infinite tail beyond $n = 10^{1000}$. A sketch illustrates intuition, but cannot guarantee behavior across infinite domains.

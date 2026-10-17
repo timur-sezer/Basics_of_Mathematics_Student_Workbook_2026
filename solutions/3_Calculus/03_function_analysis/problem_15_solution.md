@@ -33,8 +33,8 @@ However, a student wrote the following incorrect analysis:
    - If the leading coefficient $A > 0$, the parabola opens **upward**: it is **negative strictly between its roots** ($x \in (x_1, x_2)$) where the vertex dips below the axis, and **positive outside its roots** ($x < x_1$ or $x > x_2$).
    - If $A < 0$, the parabola opens **downward**: it is positive between its roots and negative outside them.
 
-3. **Monotonicity and Set Notation:**
-   Monotonicity is a property defined on connected intervals. It must not be stated across disconnected unions of intervals with the symbol $\cup$.
+3. **Monotonicity and Domain Subsets:**
+   Monotonicity can formally be defined on arbitrary ordered subsets $S \subseteq \mathbb{R}$ (for instance, $f$ is non-increasing on $S$ if for all $x_1, x_2 \in S$, $x_1 < x_2 \implies f(x_1) \ge f(x_2)$). However, establishing monotonicity separately on two disjoint intervals does not automatically imply monotonicity across their union $I_1 \cup I_2$.
 
 ---
 
@@ -60,7 +60,7 @@ This is a quadratic with leading coefficient $A = +3 > 0$.
 This single sign error caused every subsequent deduction to be completely wrong:
 1. **Inverted signs:** The student declared $f'(x) > 0$ on $(-1, 1)$ (false; it is negative) and $f'(x) < 0$ outside (false; it is positive).
 2. **Inverted monotonicity:** The student claimed $f$ is increasing on $(-1, 1)$ and decreasing on the outside. In reality, $f$ increases on the outside and decreases on $(-1, 1)$.
-3. **Improper union notation:** The student wrote decreasing on $(-\infty, -1) \cup (1, \infty)$, which is mathematically invalid for monotonicity.
+3. **Invalid union deduction:** The student claimed $f$ is decreasing on $(-\infty, -1) \cup (1, \infty)$. While monotonicity can be defined on arbitrary subsets, separate interval results do not automatically imply monotonicity across a union. For instance, taking $x_1 = -2 \in (-\infty, -1)$ and $x_2 = 2 \in (1, \infty)$ gives $x_1 < x_2$, yet $f(-2) = -2 < f(2) = 2$, contradicting the claim of decreasing on the union.
 4. **Inverted extrema classification:**
    - At $x = -1$, the student claimed a local minimum because they believed $f'$ changed from $-$ to $+$. In reality, $f'$ changes from $+$ to $-$, making $x = -1$ a **local maximum**.
    - At $x = 1$, the student claimed a local maximum because they believed $f'$ changed from $+$ to $-$. In reality, $f'$ changes from $-$ to $+$, making $x = 1$ a **local minimum**.
@@ -142,11 +142,10 @@ The three test points unequivocally prove that the student's sign assignment was
    - At $x = +1$: $f''(1) = 6(1) = +6 > 0 \implies$ strict local minimum ($\checkmark$).
    This conclusively confirms that $(-1, 2)$ is a local maximum and $(1, -2)$ is a local minimum, directly contradicting the student's claims.
 
-2. **Global Limits (End-Behavior) Check:**
+2. **Global Limits (End-Behavior) Consistency Check:**
+   Evaluating the limits at infinity:
    $$
    \lim_{x \to -\infty} (x^3 - 3x) = -\infty, \qquad \lim_{x \to +\infty} (x^3 - 3x) = +\infty
    $$
-   - Because $f(x) \to -\infty$ as $x \to -\infty$ and rises to $f(-1) = 2$, it must be **increasing** on $(-\infty, -1)$.
-   - Because $f(-1) = 2$ and drops to $f(1) = -2$, it must be **decreasing** on $(-1, 1)$.
-   - Because $f(1) = -2$ and climbs to $+\infty$ as $x \to +\infty$, it must be **increasing** on $(1, \infty)$.
-   Global limits provide a foolproof sanity check that completely refutes the student's inverted monotonicity.
+   *Important Epistemological Note:* Knowing the infinite limits and the values at critical points ($f(-1) = 2$, $f(1) = -2$) does not by itself prove monotonicity between them, because a function could easily oscillate wildly while sharing those identical endpoint values and limits. The **rigorous mathematical proof of monotonicity is provided exclusively by the derivative sign analysis** in Step 3 ($f'(x) \ge 0$ on $(-\infty, -1]$ and $[1, \infty)$, $f'(x) \le 0$ on $[-1, 1]$).
+   The global limits serve as a valuable macroscopic **consistency check**: the curve rising from $-\infty$ to $f(-1) = 2$, falling to $f(1) = -2$, and ascending to $+\infty$ agrees seamlessly with the proven local monotonicity.

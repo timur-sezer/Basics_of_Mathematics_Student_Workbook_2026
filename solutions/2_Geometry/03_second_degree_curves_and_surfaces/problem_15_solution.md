@@ -158,23 +158,25 @@ Therefore, the surface is an **elliptic cone** (Polish: *stożek eliptyczny*), w
 
 #### 1. Translated Ellipse: $\frac{(x - 1)^2}{9} + \frac{(y + 2)^2}{4} = 1$
 ```
-                       y
-                       ^
-                       |
-                       |  (1, 0) [Co-vertex B_2]
-                  .----+----.
-              .        |        .
-           .           |           .
-  --------+------------+------------+--------> x
-        -2|          (1,-2)         | 4
-  [Vertex A_1]     [Center]     [Vertex A_2]
-           .           |           .
-              .        |        .
-                  '----+----'
-                       |  (1, -4) [Co-vertex B_1]
-                       |
+                 y (coordinate axis)
+                 ^
+                 |                 B_2(1, 0) [Touches x-axis at y = 0]
+   --------------+-------------------*-------------------------> x (coordinate axis)
+               0 |                 .---.
+                 |              .         .
+                 |            /             \
+      A_1(-2,-2) |           |    S(1, -2)   |        A_2(4, -2)
+ - - - - * - - - + - - - - - |- - - -+ - - - |- - - - - * - - - (symmetry line y = -2)
+       [Vertex]  |           |    [Center]   |       [Vertex]
+                 |            \             /
+                 |              .         .
+                 |                 '---'
+ - - - - - - - - + - - - - - - - - - * - - - - - - - - - - - - (bottom tangent y = -4)
+                 |                 B_1(1, -4)
+                 |                   |
+                 v                (symmetry line x = 1)
 ```
-*Labels:* Center $S(1, -2)$; horizontal major axis ($2a = 6$) with vertices $A_1(-2, -2)$ and $A_2(4, -2)$; vertical minor axis ($2b = 4$) with co-vertices $B_1(1, -4)$ and $B_2(1, 0)$.
+*Labels:* Coordinate axes cross at $(0, 0)$; ellipse lies entirely in the lower half-plane $y \le 0$; top co-vertex $B_2(1, 0)$ is tangent to the $x$-axis; center $S(1, -2)$ lies at the intersection of symmetry lines $x = 1$ and $y = -2$; major axis vertices are $A_1(-2, -2)$ (left of $y$-axis) and $A_2(4, -2)$ (right of $y$-axis); bottom co-vertex is $B_1(1, -4)$.
 
 #### 2. Elliptic Cone: $4x^2 + y^2 = z^2$ (Aspect Ratio $y : x = 2 : 1$)
 ```

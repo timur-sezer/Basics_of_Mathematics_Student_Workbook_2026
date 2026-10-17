@@ -62,15 +62,37 @@ $$
 #### 2. Prediction for $I_2 = \int_{-2}^2 |x| \, dx$:
 - **Parity:** $g(-x) = |-x| = |x| = g(x) \implies g(x) = |x|$ is an **even function**.
 - **Geometry:**
-  - The graph of $y = |x|$ is a "V-shape" with vertex at $(0, 0)$.
-  - The negative branch on $[-2, 0]$ is flipped above the $x$-axis. Both the left and right halves form identical positive right triangles, each with base $2$ and height $2$:
+  - The graph of $y = |x|$ is a symmetric "V-shape" with vertex at $(0, 0)$.
+  - The negative branch on $[-2, 0]$ is reflected above the $x$-axis. Both the left and right halves form identical positive right triangles, each with base $2$ and height $2$:
     $$
     \text{Area}_{\text{left}} = \frac{1}{2}(2)(2) = 2, \qquad \text{Area}_{\text{right}} = \frac{1}{2}(2)(2) = 2
     $$
-- **Prediction:** The two positive areas reinforce each other:
+- **Prediction:** The two positive areas reinforce each other constructively:
   $$
   I_2 = 2 + 2 = 4
   $$
+
+#### 3. Required Geometric Sketches Prior to Analytical Calculation:
+
+```text
+Graph of f(x) = x (Odd: Net Area = 0)         Graph of g(x) = |x| (Even: Total Area = 4)
+             y                                             y
+             ^                                             ^
+         2   |           * (2, 2)              (-2, 2) *   |   * (2, 2)
+             |         / |                             | \ | / |
+         1   |       /   | Area = +2               1   |   *   | Area = +2 each
+             |     /     |                             | /   \ |
+   ----------+---*-------+---------> x         --------+---*---+---------> x
+            -2   |(0,0)  2                            -2 |(0,0)| 2
+             | / |                                       |     |
+  Area = -2  /   |                                       Vertex
+           / |   |                                       at Origin
+   (-2,-2)*  |   |
+            -2   v
+```
+*Labels:*
+- **Left graph ($y = x$):** The line passes directly through the origin $(0, 0)$ at the intersection of the coordinate axes; triangle on $[-2, 0]$ has signed area $-2$; triangle on $[0, 2]$ has signed area $+2$; net integral cancels to $0$.
+- **Right graph ($y = |x|$):** The "V" has its vertex at the origin $(0, 0)$ at the intersection of the axes; point $(-2, 2)$ lies strictly to the left of the $y$-axis and point $(2, 2)$ lies strictly to the right of the $y$-axis, displaying perfect reflectional symmetry across the $y$-axis; both triangles have positive area $+2$, adding to a total of $4$.
 
 ---
 
@@ -123,18 +145,7 @@ The analytical calculation confirms $I_2 = 4$.
 
 ### Step 4: Geometric and Physical Explanation of the Difference
 
-```text
-Graph of f(x) = x (Odd: Net Area = 0)         Graph of g(x) = |x| (Even: Total Area = 4)
-             y                                             y
-             ^                                             ^
-         2   |         * (2, 2)                        2   | * (-2, 2)     * (2, 2)
-             |       * |                                   |   *         * |
-         1   |     *   | Area A2 = +2                  1   |     *     *   | Area = +2
-     --------+---*-----+---------> x               --------+--------*------+---------> x
-        -2   |  0      2                              -2   |       (0, 0)  2
-         | * |                                             |
-   (-2,-2) * | Area A1 = -2
-```
+As visualized in the sketches in Step 1:
 
 1. **Mathematical Explanation:**
    - In $I_1$, the values $f(x)$ carry signs. Negative function values on $[-2, 0]$ multiply positive step sizes $dx$ to yield negative infinitesimal areas $dA = x \, dx < 0$. These cancel with the equal positive infinitesimal areas on $[0, 2]$, resulting in zero net accumulation.
