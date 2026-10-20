@@ -109,21 +109,37 @@ Surface 2 is a **hyperbolic paraboloid** (commonly called a **saddle surface**).
 *Labels:* Vertical axis of rotational symmetry $z$; upward-opening parabolic vertical traces $z = x^2$ ($y=0$) and $z = y^2$ ($x=0$); horizontal circular level slices $x^2 + y^2 = c$ ($c > 0$); vertex at $(0, 0, 0)$.
 
 #### 2. Hyperbolic Paraboloid (Saddle): $z = x^2 - y^2$
-```
+
+The topography is characterized by two orthogonal principal cross-sections meeting at the origin $(0, 0, 0)$:
+
+**Section A: Vertical Trace in the plane $y = 0$ ($xz$-plane): $z = x^2$**
+```text
                          z
-                         ^   Trace in plane y = 0: z = x^2 (bends UPWARD)
-                \        |        /
+                         ^   z = x^2 (opens UPWARD, stays z >= 0)
                  \       |       /
                   \      |      /
-   ----------------\-----+-----/------------------> y (axis)
-                  .   (0,0,0)   .
-                /     [Origin]    \
-              /       [Saddle]      \
-            /            |            \  Trace in plane x = 0: z = -y^2 (bends DOWNWARD)
-          v
-          x (axis)
+                   \     |     /
+                    \    |    /
+   ------------------\---+---/------------------> x (in plane y = 0)
+                     (0, 0, 0) [Global Minimum of trace, z = 0]
 ```
-*Labels:* Coordinate axes $x, y, z$ meeting at the origin $(0, 0, 0)$; upward-opening parabolic trace $z = x^2$ in the vertical plane $y = 0$ ($xz$-plane); downward-opening parabolic trace $z = -y^2$ in the vertical plane $x = 0$ ($yz$-plane); common vertex at $(0, 0, 0)$ serving as a saddle point (min in $x$, max in $y$).
+*Features:* Parabola opening upward in the $xz$-plane; vertex at $(0, 0, 0)$; stays strictly at $z \ge 0$ and intersects the zero-level line $z = 0$ only at the origin $(0, 0, 0)$.
+
+**Section B: Vertical Trace in the plane $x = 0$ ($yz$-plane): $z = -y^2$**
+```text
+                     (0, 0, 0) [Global Maximum of trace, z = 0]
+   ----------------------+----------------------> y (in plane x = 0)
+                    /    |    \
+                   /     |     \
+                  /      |      \
+                 /       |       \
+                         |   z = -y^2 (opens DOWNWARD, stays z <= 0)
+                         v
+                         -z
+```
+*Features:* Parabola opening downward in the $yz$-plane; vertex at $(0, 0, 0)$; stays strictly at $z \le 0$ and intersects the zero-level line $z = 0$ only at the origin $(0, 0, 0)$.
+
+*Synthesis:* At the common origin $(0, 0, 0)$, the surface attains a local minimum along the $x$-direction ($z = x^2 \ge 0$) and a local maximum along the $y$-direction ($z = -y^2 \le 0$), rigorously confirming that $(0, 0, 0)$ is a saddle point.
 
 ---
 

@@ -186,21 +186,21 @@ $$
                      y
                      ^
          3           |
-                     * M(0, 2) [Local Maximum on y-axis]
+                     * M(0, 2) [Local Max on y-axis]
          2         / | \
                  /   |   \
          1     /     |     \
-   ----------*-------+------*-------*-------> x
-      (1-√3, 0)      |    I(1,0)    | (1+√3, 0)
-     [≈ -0.732]      |              | [≈ 2.732]
-        -1   |       |               \     /
-             |       |                \   /
-        -2   |       +------------------* m(2, -2) [Local Minimum]
-             |       |
+   ----------*-------+------*-------+-------*-------------> x (y = 0)
+         (1-√3, 0) (0,0)  I(1, 0)   |   (1+√3, 0)        /
+        [-0.732]     |              |    [2.732]       /
+        -1   |       |               \                /
+             |       |                \              /
+        -2   |       |                 * m(2, -2)---/
+             |       |              [Local Min at x = 2]
         -3   v       |
    (rises from -inf) v
 ```
-*Labels:* Local maximum $M(0, 2)$ lies on the $y$-axis; left branch rises from $-\infty$ through $x$-intercept $(1-\sqrt{3}, 0) \approx (-0.732, 0)$ to $M(0, 2)$; curve decreases through inflection point $I(1, 0)$ to local minimum $m(2, -2)$; right branch rises through $x$-intercept $(1+\sqrt{3}, 0) \approx (2.732, 0)$ toward $+\infty$.
+*Labels:* Local maximum $M(0, 2)$ lies on the $y$-axis; curve rises from $-\infty$ through $x$-intercept $(1-\sqrt{3}, 0) \approx (-0.732, 0)$ to $M(0, 2)$, decreases through inflection point $I(1, 0)$ to local minimum $m(2, -2)$ at $x = 2$, and then rises through $x$-intercept $(1+\sqrt{3}, 0) \approx (2.732, 0)$ toward $+\infty$, maintaining the strict horizontal order $-0.732 < 0 < 1 < 2 < 2.732$.
 
 ---
 

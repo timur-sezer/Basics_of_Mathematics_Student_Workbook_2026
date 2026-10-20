@@ -157,26 +157,25 @@ Therefore, the surface is an **elliptic cone** (Polish: *stożek eliptyczny*), w
 ### Step 5: Required Qualitative Sketches of Both Objects
 
 #### 1. Translated Ellipse: $\frac{(x - 1)^2}{9} + \frac{(y + 2)^2}{4} = 1$
+```text
+                                y (axis x = 0)
+                                ^
+                                |              B_2(1, 0) [Top: touches x-axis]
+  ------------------------------+----------------*------------------------------> x (axis y = 0)
+                                |             /     \
+                               |            /         \
+                              /|           /     |     \
+          A_1(-2, -2)        / |          |   S(1, -2)  |        A_2(4, -2)
+  -----------*--------------+--+----------+---[Center]--+-----------*----------- (symmetry line y = -2)
+        [Left Vertex]        \ |          |             |     [Right Vertex]
+       (left of y-axis)       \|           \     |     /
+                               |            \         /
+  ------------------------------+----------------*------------------------------> (line y = -4)
+                                |              B_1(1, -4) [Bottom]
+                                |                 |
+                                          (symmetry line x = 1)
 ```
-                 y (coordinate axis)
-                 ^
-                 |                 B_2(1, 0) [Touches x-axis at y = 0]
-   --------------+-------------------*-------------------------> x (coordinate axis)
-               0 |                 .---.
-                 |              .         .
-                 |            /             \
-      A_1(-2,-2) |           |    S(1, -2)   |        A_2(4, -2)
- - - - - * - - - + - - - - - |- - - -+ - - - |- - - - - * - - - (symmetry line y = -2)
-       [Vertex]  |           |    [Center]   |       [Vertex]
-                 |            \             /
-                 |              .         .
-                 |                 '---'
- - - - - - - - - + - - - - - - - - - * - - - - - - - - - - - - (bottom tangent y = -4)
-                 |                 B_1(1, -4)
-                 |                   |
-                 v                (symmetry line x = 1)
-```
-*Labels:* Coordinate axes cross at $(0, 0)$; ellipse lies entirely in the lower half-plane $y \le 0$; top co-vertex $B_2(1, 0)$ is tangent to the $x$-axis; center $S(1, -2)$ lies at the intersection of symmetry lines $x = 1$ and $y = -2$; major axis vertices are $A_1(-2, -2)$ (left of $y$-axis) and $A_2(4, -2)$ (right of $y$-axis); bottom co-vertex is $B_1(1, -4)$.
+*Labels:* Continuous oval passes through all four perimeter vertices: $A_1(-2, -2)$ (left vertex, strictly to the left of the $y$-axis), $B_2(1, 0)$ (top co-vertex, tangent to the $x$-axis), $A_2(4, -2)$ (right vertex), and $B_1(1, -4)$ (bottom co-vertex); ellipse is centered at $S(1, -2)$ at the intersection of symmetry lines $x = 1$ and $y = -2$; coordinate axes cross at the origin $(0, 0)$ separately from the ellipse center.
 
 #### 2. Elliptic Cone: $4x^2 + y^2 = z^2$ (Aspect Ratio $y : x = 2 : 1$)
 ```

@@ -75,24 +75,38 @@ $$
 #### 3. Required Geometric Sketches Prior to Analytical Calculation:
 
 ```text
-Graph of f(x) = x (Odd: Net Area = 0)         Graph of g(x) = |x| (Even: Total Area = 4)
-             y                                             y
-             ^                                             ^
-         2   |           * (2, 2)              (-2, 2) *   |   * (2, 2)
-             |         / |                             | \ | / |
-         1   |       /   | Area = +2               1   |   *   | Area = +2 each
-             |     /     |                             | /   \ |
-   ----------+---*-------+---------> x         --------+---*---+---------> x
-            -2   |(0,0)  2                            -2 |(0,0)| 2
-             | / |                                       |     |
-  Area = -2  /   |                                       Vertex
-           / |   |                                       at Origin
-   (-2,-2)*  |   |
-            -2   v
+Plot 1: Graph of f(x) = x on [-2, 2] (Odd Function: Net Signed Area = 0)
+                              y
+                              ^
+         2                    |           * (2, 2)
+                              |         / |
+         1                    |       /   |  Area = +2
+                              |     /     |
+   ---------------+-----------*-----------+------------------> x
+                 -2         |(0, 0)       2
+                           /  |
+        -1             /      |  Area = -2
+                     /        |
+        -2        *           |
+               (-2, -2)       v
+```
+
+```text
+Plot 2: Graph of g(x) = |x| on [-2, 2] (Even Function: Total Area = 4)
+                              y
+                              ^
+         2        * (-2, 2)   |           * (2, 2)
+                  | \         |         / |
+         1        |   \       |       /   |  Area = +2 each
+                  |     \     |     /     |
+   ---------------+-----------*-----------+------------------> x
+                 -2         |(0, 0)       2
+                            | Vertex at Origin
+                            v
 ```
 *Labels:*
-- **Left graph ($y = x$):** The line passes directly through the origin $(0, 0)$ at the intersection of the coordinate axes; triangle on $[-2, 0]$ has signed area $-2$; triangle on $[0, 2]$ has signed area $+2$; net integral cancels to $0$.
-- **Right graph ($y = |x|$):** The "V" has its vertex at the origin $(0, 0)$ at the intersection of the axes; point $(-2, 2)$ lies strictly to the left of the $y$-axis and point $(2, 2)$ lies strictly to the right of the $y$-axis, displaying perfect reflectional symmetry across the $y$-axis; both triangles have positive area $+2$, adding to a total of $4$.
+- **Plot 1 ($y = x$):** The line passes directly through the origin $(0, 0)$ at the intersection of the coordinate axes; triangle on $[-2, 0]$ has signed area $-2$; triangle on $[0, 2]$ has signed area $+2$; net integral cancels to $0$.
+- **Plot 2 ($y = |x|$):** The single "V" consists of straight segments from $(-2, 2)$ to $(0, 0)$ and from $(0, 0)$ to $(2, 2)$, meeting only at the origin $(0, 0)$ at the intersection of the coordinate axes; point $(-2, 2)$ lies strictly to the left of the $y$-axis and point $(2, 2)$ lies strictly to the right of the $y$-axis, displaying perfect reflectional symmetry across the $y$-axis; both triangles have positive area $+2$, adding to a total of $4$.
 
 ---
 

@@ -178,22 +178,22 @@ $$
 
 2. **ASCII Visual Profile:**
 ```text
-                 :             y             :
-      x = -1     :             ^             :     x = 1
-   (Asymptote)   :             |             :  (Asymptote)
-        |        :             |             :       |
-        |        :             |             :       |
-         \       :             |             :      /
-          \      :             |             :     /
-           ------:             |             :-----    (Outer branches > 0, y -> 0+)
-   --------------:-------------+-------------:-----------------> x (Horizontal Asymptote y = 0)
-                 :             | (0, 0)      :
-                 :             |             :
-                 :          (0, -1)          :
-                 :             * [Local Max] :
-                 :           / | \           :
-                 :          /  |  \          :
-                 :         |   |   |         :
-                 :         v   |   v         : (Middle branch: plunges to -inf)
+                  :             y             :
+       x = -1     :             ^             :     x = 1
+    (Asymptote)   :             |             :  (Asymptote)
+                  |             |             |
+                  |             |             |
+                 /              |              \
+                /               |               \
+         ------'  :             |             :  `------   (Outer branches: y -> 0+ as |x| -> inf)
+   ---------------:-------------+-------------:-----------------> x (Horizontal Asymptote y = 0)
+                  :             | (0, 0)      :
+                  :             |             :
+                  :          (0, -1)          :
+                  :             * [Local Max] :
+                  :           / | \           :
+                  :          /  |  \          :
+                  :         |   |   |         :
+                  :         v   |   v         : (Middle branch: plunges to -inf)
 ```
-*Labels:* Vertical asymptote $x = -1$ strictly to the left of the $y$-axis; vertical asymptote $x = 1$ strictly to the right of the $y$-axis; both outer branches ($x < -1$ and $x > 1$) stay strictly positive ($y > 0$) and never touch or cross the $x$-axis; middle branch ($-1 < x < 1$) stays strictly at or below $-1$ ($y \le -1$), peaking at the strict local maximum $(0, -1)$ on the $y$-axis and plunging toward $-\infty$ at both asymptotes.
+*Labels:* Vertical asymptote $x = -1$ strictly to the left of the $y$-axis; vertical asymptote $x = 1$ strictly to the right of the $y$-axis; on $x < -1$, the curve rises from $0^+$ at $-\infty$ to $+\infty$ as $x \to -1^-$ (strictly increasing); on $x > 1$, the curve falls from $+\infty$ at $x \to 1^+$ toward $0^+$ at $+\infty$ (strictly decreasing); both outer branches stay strictly positive ($y > 0$) and never touch or cross the $x$-axis; middle branch ($-1 < x < 1$) stays strictly at or below $-1$ ($y \le -1$), peaking at the strict local maximum $(0, -1)$ on the $y$-axis and plunging toward $-\infty$ at both asymptotes.

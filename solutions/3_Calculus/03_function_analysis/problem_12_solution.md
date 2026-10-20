@@ -59,19 +59,18 @@ $$
 
 2. **Required Sketch of Base Parabola $p(x) = x^2 - 4$:**
 ```text
-            y
-            ^
-        2   | \                             /
-        1   |  \                           /
-   ---------*---+-------------------------*----------> x
-         (-2, 0)| (0, 0)                 (2, 0)
-       -1       | \                       /
-       -2       |  \                     /
-       -3       |   \                   /
-       -4 ------+----*-----------------+------- y = -4 [Vertex]
-                |    V(0, -4)
+                                  y
+                                  ^
+              4   \               |               /
+              2    \              |              /
+   -----------------*-------------+-------------*------------------> x
+                 (-2, 0)          | (0, 0)    (2, 0)
+             -2      \            |            /
+                      \           |           /
+             -4 -------+----------*----------+---------------------- y = -4
+                       |       V(0, -4)      |
 ```
-*Labels:* Vertex $V(0, -4)$ on the $y$-axis; roots at $(-2, 0)$ and $(2, 0)$; negative parabolic trough on $(-2, 2)$ below the $x$-axis.
+*Labels:* Vertex $V(0, -4)$ located on the $y$-axis ($x = 0$); roots at $(-2, 0)$ and $(2, 0)$; negative parabolic trough on $(-2, 2)$ dipping below the $x$-axis.
 
 ---
 
@@ -150,7 +149,7 @@ The two-sided derivative $f'(-2)$ **does not exist**.
 
 1. **Geometric Reason for Non-Differentiability:**
    At $x = 2$, the left branch arrives with a steep downward slope $m = -4$, while the right branch departs with a steep upward slope $m = +4$.
-   The graph forms a sharp "V-shaped" corner at $(2, 0)$ and at $(-2, 0)$. There is no unique tangent line at these points: an entire fan of secant lines with slopes between $-4$ and $+4$ can be drawn through the corner point without cutting through the interior of the curve.
+   The graph forms a sharp corner at $(2, 0)$ and at $(-2, 0)$. At these corner points, the left-hand and right-hand limiting secant slopes are unequal ($f'_-(2) = -4$ and $f'_+(2) = +4$). Lines passing through the corner with intermediate slopes between $-4$ and $+4$ are supporting lines to the epigraph, not limiting secant lines or tangents; hence no two-sided tangent line exists.
 
 2. **Connection to Fermat's Theorem:**
    - Because $f(x) = |x^2 - 4| \ge 0$ for all $x \in \mathbb{R}$, and $f(\pm 2) = 0$, the points $(-2, 0)$ and $(2, 0)$ are **absolute (global) minima** of $f(x)$.
@@ -159,20 +158,20 @@ The two-sided derivative $f'(-2)$ **does not exist**.
 
 **ASCII Graph Sketch of $f(x) = |x^2 - 4|$:**
 ```text
-            y
-            ^
-        5   | \                                 /
-        4   |  \          * (0, 4) [Local Max] /
-            |   \       / | \                 /
-        3   |    \     /  |  \               /
-        2   |     \   /   |   \             /
-        1   |      \ /    |    \           /
-   ---------+-------*-----+-----*-------------+---------> x
-           -3    (-2, 0)  0   (2, 0)          3
-                 Corner  (0,0) Corner
-               [Global Min]  [Global Min]
+                                  y
+                                  ^
+              5   \               |               /
+              4    \              * (0, 4)       /
+                    \           / | \           /
+              3      \         /  |  \         /
+              2       \       /   |   \       /
+              1        \     /    |    \     /
+   ---------------------*---'-----+-----`---*----------------------> x
+                     (-2, 0)      | (0, 0) (2, 0)
+                     Corner                Corner
+                  [Global Min]          [Global Min]
 ```
-*Labels:* Vertex $(0, 4)$ on the $y$-axis (local maximum); corners at $(-2, 0)$ and $(2, 0)$ on the $x$-axis (global minima where derivative is undefined); downward-opening arch on $(-2, 2)$; upward-opening branches on $(-\infty, -2]$ and $[2, \infty)$.
+*Labels:* Peak $(0, 4)$ on the $y$-axis ($x = 0$, local maximum); corners at $(-2, 0)$ and $(2, 0)$ on the $x$-axis (global minima where derivative is undefined); downward-opening arch on $(-2, 2)$; outer upward-opening branches on $(-\infty, -2]$ and $[2, \infty)$ continuously connected to the corners $\pm 2$.
 
 ---
 

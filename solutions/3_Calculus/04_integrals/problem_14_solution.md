@@ -69,19 +69,19 @@ $$
 - **Branch 2 (Constant on $[1, 3]$):** Horizontal plateau at height $y = 2$ from $(1, 2)$ to $(3, 2)$.
 
 ```text
-                       y
-                       ^
-                   2   |               *-----------* (3, 2)
-                       |              /|           |
-                   1   |             * |           |
-                       |        (0,1)/ |           |
-   --------------------*-------------+-------------+---------> x
-                    (-1, 0)          0 1           3
-                       |<--- base 2 --->|<-- base 2 ->|
-                          Triangle          Rectangle
-                         Area = 2           Area = 4
+                            y
+                            ^
+         2                  |         *-------------------* (3, 2)
+                            |    /    | (1, 2)            |
+         1           (0, 1) *         |                   |
+                       /    |         |                   |
+   ---------------*---------+---------+-------------------+-----------> x
+               (-1, 0)      0         1                   3
+                  |<------- base 2 ------>|<---------------- base 2 --------------->|
+                       Triangle                  Rectangle
+                       Area = 2                  Area = 4
 ```
-*Labels:* Linear branch begins at $(-1, 0)$ on the $x$-axis, crosses the $y$-axis at $(0, 1)$, and reaches $(1, 2)$; constant horizontal plateau extends from $(1, 2)$ to $(3, 2)$ at uniform height $2$; triangle on $[-1, 1]$ has base $2$ and height $2$ (Area $= 2$); rectangle on $[1, 3]$ has base $2$ and height $2$ (Area $= 4$).
+*Labels:* Vertical axis is located at $x = 0$, passing through $(0, 1)$ on the curve and meeting the $x$-axis at $(0, 0)$; linear branch begins at $(-1, 0)$ strictly to the left of the $y$-axis, passes continuously through $(0, 1)$ on the $y$-axis, and reaches $(1, 2)$; constant horizontal plateau extends from $(1, 2)$ to $(3, 2)$ at uniform height $2$; triangle on $[-1, 1]$ has base $2$ and height $2$ (Area $= 2$); rectangle on $[1, 3]$ has base $2$ and height $2$ (Area $= 4$).
 
 ---
 

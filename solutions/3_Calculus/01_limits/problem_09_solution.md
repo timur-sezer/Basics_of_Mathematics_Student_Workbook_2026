@@ -102,21 +102,22 @@ The two-sided limit $\lim_{x \to 2} \frac{1}{x - 2}$ **does not exist** (neither
                       y
                       ^               : (Vertical Asymptote x = 2)
                       |               :
-                      |               :    | (Right branch -> +inf as x -> 2+)
-                    2 |               :    |
-                      |               :   /
-                    1 |               :  * (3, 1)
-                      |               : /  
-   -------------------+---------------+----\-----------------> x (Horizontal Asymptote y = 0)
-                 (0,0)|           1   : 2   \  3       4
-             (0,-0.5)*|               :      ------- (approaches y = 0+)
-                      |  * (1, -1)    :
-                   -1 | /             :
-                      |/              :
-      - - - - - - - - |               :    | (Left branch -> -inf as x -> 2-)
-      (approaches 0-) |               :    v
+                    2 |               :    | (Right branch: descends from +inf)
+                      |               :    |
+                    1 |               :    * (3, 1)
+                      |               :     \
+   (stays above y=0)  |               :      \ - - - - - (decreases toward y = 0 from ABOVE)
+   -------------------+---------------+----------------------------------------> x (y = 0)
+                 (0,0)|           1   | 2       3        4        5
+             (0,-0.5)*|               |
+                      |   * (1, -1)   |
+                   -1 |  /            |
+                      | /             |
+   - - - - - - - - - -|/              |
+   (approaches 0-)    |               | (Left branch: plunges to -inf on the LEFT of x=2)
+                      v               v
 ```
-*Labels:* Vertical asymptote $x = 2$ (dashed); horizontal asymptote $y = 0$ ($x$-axis); left branch strictly below $y = 0$ for $x < 2$ passing through $(0, -0.5)$ and $(1, -1)$ and plunging to $-\infty$ as $x \to 2^-$; right branch strictly above $y = 0$ for $x > 2$ descending from $+\infty$ as $x \to 2^+$ and passing through $(3, 1)$ toward $y = 0^+$.
+*Labels:* Vertical asymptote $x = 2$ (dashed); horizontal asymptote $y = 0$ ($x$-axis); left branch stays strictly below $y = 0$ for $x < 2$, passing through $(0, -0.5)$ and $(1, -1)$, and plunging toward $-\infty$ immediately to the left of $x = 2$; right branch stays strictly above $y = 0$ for $x > 2$, descending from $+\infty$ to the right of $x = 2$, passing through $(3, 1)$, and approaching $y = 0$ asymptotically from above without touching or crossing the $x$-axis.
 
 ---
 
