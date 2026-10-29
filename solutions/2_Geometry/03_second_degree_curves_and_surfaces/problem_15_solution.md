@@ -158,24 +158,26 @@ Therefore, the surface is an **elliptic cone** (Polish: *stożek eliptyczny*), w
 
 #### 1. Translated Ellipse: $\frac{(x - 1)^2}{9} + \frac{(y + 2)^2}{4} = 1$
 ```text
-                                y (axis x = 0)
-                                ^
-                                |              B_2(1, 0) [Top: touches x-axis]
-  ------------------------------+----------------*------------------------------> x (axis y = 0)
-                                |             /     \
-                               |            /         \
-                              /|           /     |     \
-          A_1(-2, -2)        / |          |   S(1, -2)  |        A_2(4, -2)
-  -----------*--------------+--+----------+---[Center]--+-----------*----------- (symmetry line y = -2)
-        [Left Vertex]        \ |          |             |     [Right Vertex]
-       (left of y-axis)       \|           \     |     /
-                               |            \         /
-  ------------------------------+----------------*------------------------------> (line y = -4)
-                                |              B_1(1, -4) [Bottom]
-                                |                 |
-                                          (symmetry line x = 1)
+                                 y (axis x = 0)
+                                 ^
+                                 |          B_2(1, 0) [Top: touches x-axis]
+  -------------------------------+-------------*------------------------------> x (axis y = 0)
+                         /       |              \
+                    /            |                \
+                 /               |                  \
+          A_1(-2, -2)            |       S(1, -2)     \      A_2(4, -2)
+  -------------*-----------------+-------[Center]-------*--------------------- (symmetry line y = -2)
+         [Left Vertex]           |              |       [Right Vertex]
+        (left of y-axis)         |              |
+                 \               |                  /
+                    \            |                /
+                         \       |              /
+  -------------------------------+-------------*------------------------------> (line y = -4)
+                                 |          B_1(1, -4) [Bottom]
+                                 |              |
+                                       (symmetry line x = 1)
 ```
-*Labels:* Continuous oval passes through all four perimeter vertices: $A_1(-2, -2)$ (left vertex, strictly to the left of the $y$-axis), $B_2(1, 0)$ (top co-vertex, tangent to the $x$-axis), $A_2(4, -2)$ (right vertex), and $B_1(1, -4)$ (bottom co-vertex); ellipse is centered at $S(1, -2)$ at the intersection of symmetry lines $x = 1$ and $y = -2$; coordinate axes cross at the origin $(0, 0)$ separately from the ellipse center.
+*Labels:* Single continuous closed oval passes directly through all four perimeter vertices: left vertex $A_1(-2, -2)$ (located strictly to the left of the $y$-axis), top co-vertex $B_2(1, 0)$ (tangent to the $x$-axis at $y = 0$), right vertex $A_2(4, -2)$ (strictly to the right of the $y$-axis), and bottom co-vertex $B_1(1, -4)$ (on the line $y = -4$); the ellipse is centered at $S(1, -2)$ at the intersection of symmetry lines $x = 1$ and $y = -2$; the coordinate axes ($x = 0$, $y = 0$) are drawn distinctly from the ellipse symmetry axes.
 
 #### 2. Elliptic Cone: $4x^2 + y^2 = z^2$ (Aspect Ratio $y : x = 2 : 1$)
 ```

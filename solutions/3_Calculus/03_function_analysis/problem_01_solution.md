@@ -183,24 +183,24 @@ $$
 
 **ASCII Graph Sketch:**
 ```text
-                     y
-                     ^
-         3           |
-                     * M(0, 2) [Local Max on y-axis]
-         2         / | \
-                 /   |   \
-         1     /     |     \
-   ----------*-------+------*-------+-------*-------------> x (y = 0)
-         (1-√3, 0) (0,0)  I(1, 0)   |   (1+√3, 0)        /
-        [-0.732]     |              |    [2.732]       /
-        -1   |       |               \                /
-             |       |                \              /
-        -2   |       |                 * m(2, -2)---/
-             |       |              [Local Min at x = 2]
-        -3   v       |
-   (rises from -inf) v
+                      y                                          /
+                      ^                                        / (rises to +inf)
+          3           |                                      /
+                      * M(0, 2) [Local Max on y-axis]       /
+          2         / | \                                  /
+                  /   |   \                              /
+          1     /     |     \                           /
+    ----------*-------+------*---------------+---------*-------------> x (y = 0)
+          (1-√3, 0) (0,0)  I(1, 0)           |     (1+√3, 0)
+        /  [-0.732]   |                      |      [2.732]
+       /              |                       \       /
+      / -1            |                        \     /
+     /                |                         \   /
+    /   -2            |                          * m(2, -2) [Local Min]
+   /                  |
+  / (rises from -inf) v
 ```
-*Labels:* Local maximum $M(0, 2)$ lies on the $y$-axis; curve rises from $-\infty$ through $x$-intercept $(1-\sqrt{3}, 0) \approx (-0.732, 0)$ to $M(0, 2)$, decreases through inflection point $I(1, 0)$ to local minimum $m(2, -2)$ at $x = 2$, and then rises through $x$-intercept $(1+\sqrt{3}, 0) \approx (2.732, 0)$ toward $+\infty$, maintaining the strict horizontal order $-0.732 < 0 < 1 < 2 < 2.732$.
+*Labels:* Local maximum $M(0, 2)$ lies on the $y$-axis; curve is one continuous cubic rising from $-\infty$ in the lower-left through $x$-intercept $(1-\sqrt{3}, 0) \approx (-0.732, 0)$ to $M(0, 2)$, decreasing through inflection point $I(1, 0)$ to local minimum $m(2, -2)$ at $x = 2$, and then rising directly through $x$-intercept $(1+\sqrt{3}, 0) \approx (2.732, 0)$ toward $+\infty$, maintaining the strict horizontal order $-0.732 < 0 < 1 < 2 < 2.732$.
 
 ---
 

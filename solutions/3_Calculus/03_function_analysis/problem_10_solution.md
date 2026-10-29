@@ -176,23 +176,23 @@ The origin **$(0, 0)$** is the unique intersection point with both coordinate ax
 
 **ASCII Graph Sketch:**
 ```text
-                                            y
-                                            ^
-                     0.5                    |           * M(1, 0.5) [Local & Global Max]
-                                            |          / \
-                    0.25                    |         /   * I_3(√3, 0.433)
-                                            |        /     \
-                                            |       /       \ - - - - (approaches y = 0+)
-   -----------------------------------------*---------------------------------------------> x (y = 0 Asymptote)
-         (approaches y = 0-) - - - \        | I_2(0, 0) [Origin & Inflection]
-                                    \       |     /
-                   I_1(-√3, -0.433)  *      |    /
-                                      \     |   /
-                    -0.5               `--- * -'  m(-1, -0.5) [Local & Global Min]
-                                            |
-                                            v
+                                             y
+                                             ^
+                      0.5                    |       * M(1, 0.5) [Local & Global Max]
+                                             |      / \
+                     0.25                    |     /       * I_3(√3, 0.433)
+                                             |    /         \
+                                             |   /           \ - - - - (approaches y = 0+)
+    -----------------------------------------*---------------------------------------------> x (y = 0)
+          (approaches y = 0-) - - - \        | I_2(0, 0) [Origin]
+                                     \     / |
+             I_1(-√3, -0.433) *       \   /  |
+                               \       \ /   |
+                     -0.5       `-------*    |
+                                    m(-1, -0.5) [Min]
+                                             v
 ```
-*Labels:* Single origin $(0, 0)$ at the exact intersection of the coordinate axes, which is also the central inflection point $I_2(0, 0)$; point symmetry with respect to $(0, 0)$ ($f(-x) = -f(x)$); global minimum $m(-1, -0.5)$ located at $x = -1$ strictly to the left of the $y$-axis; inflection point $I_1(-\sqrt{3}, -\sqrt{3}/4) \approx (-1.732, -0.433)$ located strictly to the left of the minimum ($-\sqrt{3} < -1$); global maximum $M(1, 0.5)$ located at $x = 1$ strictly to the right of the $y$-axis; inflection point $I_3(\sqrt{3}, \sqrt{3}/4) \approx (1.732, 0.433)$ located strictly to the right of the maximum ($1 < \sqrt{3}$); strict horizontal ordering: $-\sqrt{3} < -1 < 0 < 1 < \sqrt{3}$; left tail approaches $y = 0$ asymptotically from below ($0^-$) as $x \to -\infty$; right tail approaches $y = 0$ asymptotically from above ($0^+$) as $x \to +\infty$.
+*Labels:* Single origin $(0, 0)$ at the exact intersection of the coordinate axes, which is also the central inflection point $I_2(0, 0)$; point symmetry with respect to $(0, 0)$ ($f(-x) = -f(x)$); global minimum $m(-1, -0.5)$ located strictly to the left of the vertical $y$-axis; increasing branch from $m(-1, -0.5)$ to $(0, 0)$ remains strictly in the half-plane $x < 0$ until reaching $(0, 0)$; inflection point $I_1(-\sqrt{3}, -\sqrt{3}/4) \approx (-1.732, -0.433)$ located strictly to the left of the minimum ($-\sqrt{3} < -1$); global maximum $M(1, 0.5)$ located at $x = 1$ strictly to the right of the $y$-axis; inflection point $I_3(\sqrt{3}, \sqrt{3}/4) \approx (1.732, 0.433)$ located strictly to the right of the maximum ($1 < \sqrt{3}$); strict horizontal ordering: $-\sqrt{3} < -1 < 0 < 1 < \sqrt{3}$; left tail approaches $y = 0$ asymptotically from below ($0^-$) as $x \to -\infty$; right tail approaches $y = 0$ asymptotically from above ($0^+$) as $x \to +\infty$.
 
 ---
 

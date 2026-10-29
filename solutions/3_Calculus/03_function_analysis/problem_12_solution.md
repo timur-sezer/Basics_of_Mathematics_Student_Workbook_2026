@@ -148,8 +148,8 @@ The two-sided derivative $f'(-2)$ **does not exist**.
 ### Step 5: Geometric Justification and Fermat's Theorem
 
 1. **Geometric Reason for Non-Differentiability:**
-   At $x = 2$, the left branch arrives with a steep downward slope $m = -4$, while the right branch departs with a steep upward slope $m = +4$.
-   The graph forms a sharp corner at $(2, 0)$ and at $(-2, 0)$. At these corner points, the left-hand and right-hand limiting secant slopes are unequal ($f'_-(2) = -4$ and $f'_+(2) = +4$). Lines passing through the corner with intermediate slopes between $-4$ and $+4$ are supporting lines to the epigraph, not limiting secant lines or tangents; hence no two-sided tangent line exists.
+   At $x = 2$, the left branch arrives with a limiting slope of $f'_-(2) = -4$, while the right branch departs with a limiting slope of $f'_+(2) = +4$.
+   The graph forms a sharp corner at $(2, 0)$ and at $(-2, 0)$. Because the one-sided limiting secant slopes are strictly unequal ($f'_-(2) = -4 \neq +4 = f'_+(2)$ and $f'_-(-2) = -4 \neq +4 = f'_+(-2)$), no unique two-sided tangent line exists at either corner point, meaning the function is non-differentiable at $x = \pm 2$.
 
 2. **Connection to Fermat's Theorem:**
    - Because $f(x) = |x^2 - 4| \ge 0$ for all $x \in \mathbb{R}$, and $f(\pm 2) = 0$, the points $(-2, 0)$ and $(2, 0)$ are **absolute (global) minima** of $f(x)$.

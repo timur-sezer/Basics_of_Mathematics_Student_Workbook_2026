@@ -119,16 +119,17 @@ The topography is characterized by two orthogonal principal cross-sections meeti
                  \       |       /
                   \      |      /
                    \     |     /
-                    \    |    /
-   ------------------\---+---/------------------> x (in plane y = 0)
+                    \_   |   _/
+   -------------------`--*--'-------------------> x (in plane y = 0)
                      (0, 0, 0) [Global Minimum of trace, z = 0]
 ```
-*Features:* Parabola opening upward in the $xz$-plane; vertex at $(0, 0, 0)$; stays strictly at $z \ge 0$ and intersects the zero-level line $z = 0$ only at the origin $(0, 0, 0)$.
+*Features:* Parabola opening upward in the $xz$-plane; both arms meet at the single vertex $(0, 0, 0)$ at the axes intersection; curve stays strictly at $z \ge 0$ and meets the zero-level line $z = 0$ only at the origin $(0, 0, 0)$.
 
 **Section B: Vertical Trace in the plane $x = 0$ ($yz$-plane): $z = -y^2$**
 ```text
                      (0, 0, 0) [Global Maximum of trace, z = 0]
-   ----------------------+----------------------> y (in plane x = 0)
+   ----------------------*----------------------> y (in plane x = 0)
+                     .-' | `-.
                     /    |    \
                    /     |     \
                   /      |      \
@@ -137,7 +138,7 @@ The topography is characterized by two orthogonal principal cross-sections meeti
                          v
                          -z
 ```
-*Features:* Parabola opening downward in the $yz$-plane; vertex at $(0, 0, 0)$; stays strictly at $z \le 0$ and intersects the zero-level line $z = 0$ only at the origin $(0, 0, 0)$.
+*Features:* Parabola opening downward in the $yz$-plane; both arms meet at the single vertex $(0, 0, 0)$ at the axes intersection; curve stays strictly at $z \le 0$ and meets the zero-level line $z = 0$ only at the origin $(0, 0, 0)$.
 
 *Synthesis:* At the common origin $(0, 0, 0)$, the surface attains a local minimum along the $x$-direction ($z = x^2 \ge 0$) and a local maximum along the $y$-direction ($z = -y^2 \le 0$), rigorously confirming that $(0, 0, 0)$ is a saddle point.
 
